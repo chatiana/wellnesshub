@@ -57,10 +57,40 @@ nav a:hover {
 .main1 img{
     width: 100%;
 }
-footer{
-    background-color: #11698c;
+.banneradd{
+    background-image: url(/wellnesshub/images/68b62085e41e8f225811766f8d5eb2bb_XL.jpg);
 }
+footer{
+    background-color: #16778c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #f1f1f1;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: #A0D9BE;
+}
+footer a:hover{
+    color:#f2ebc4;
+}
+
 footer img{
     width: 80px;
     height: 80px;
+}
+.footer-col1 {
+    margin: 50px;
+}
+.footer-col2 {
+    margin: 50px;
+}
+.footer-col3 {
+    margin: 50px;
+}
+.footer-col4 {
+    margin: 50px;
 }
