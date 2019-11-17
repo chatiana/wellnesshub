@@ -58,8 +58,12 @@ nav a:hover {
     width: 100%;
 }
 .banneradd{
-    background-image: url(/wellnesshub/images/68b62085e41e8f225811766f8d5eb2bb_XL.jpg);
+    background-image: url('../images/yogasun.jpg');
+    width: 100%;
+    height: 400px; 
 }
+
+
 footer{
     background-color: #16778c;
     display: flex;
