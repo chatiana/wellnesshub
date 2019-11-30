@@ -11,7 +11,7 @@ body{
 }
 .top-right a{
     text-decoration: none;
-    color:#16778C;
+   color:#16778C;
 }
 .top-right a:hover{
     color: rgb(235, 140, 106);
@@ -98,3 +98,94 @@ footer img{
 .footer-col4 {
     margin: 50px;
 }
+
+
+/* FOR CONTACT FORM - BY WILMIR */
+.contact{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.contact-title, 
+.contact-content{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    margin:12px 0px;
+    box-sizing: border-box;
+
+}
+
+.contact-content-col1, 
+.contact-content-col2 {
+    display:flex;
+    width: 25%;
+    flex-direction: column;
+    margin:12px;
+    box-sizing: border-box;
+}
+
+/* Style the form container */
+.contact-content-form{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Style form inputs, select elements and textareas */
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    display: inline-block;
+    font-size:14px;
+    font-weight: bolder;
+  }
+
+  /* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    box-sizing: border-box;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    box-sizing: border-box;
+  }
+  
+  /* Clear floats after the columns */
+  .form-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 768px wide*/
+@media screen and (max-width: 768px) {    
+    /* make the article, map, and form stack on top of each other */
+    .contact-content{
+        flex-direction: column;
+    }
+
+    /* make the article, map, and form stack on top of each other */
+    .contact-content-col1, 
+    .contact-content-col2 {
+        width: 100%;
+        padding:2px 30px;
+    }
+  }
+
+  /* END OF CONTACT FORM */
