@@ -98,6 +98,84 @@ footer img{
     margin: 50px;
 }
 
+/*Index-products*/
+.products{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+@media screen and (max-width: 768px) {  
+    .products{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .prd-dscr-btn{
+        width: 100%;
+    }
+}
+.product-1 {
+    padding: 5%;
+}
+.product-2 {
+    padding: 5%;
+}
+.product-3 {
+    padding: 5%;
+}
+.container {
+    position: relative;
+    width: 100%;
+  }
+.container img{
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #11698c;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  .text {
+    color: #A0D9BE;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .prd-dscr-btn{
+    background-color:  #2999A6;
+    border-color: #2999A6;
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    border-style: solid 1px;
+    padding: 10px 20px;
+  }
+  .prd-dscr-btn:hover{
+      background-color: #11698c;
+      color: #f1f1f1;
+  }
+/*End of Index-products*/
+
 
 /* FOR CONTACT PAGE - BY WILMIR */
 /*Styles the contact section*/
@@ -363,7 +441,7 @@ label {
 
 
     .header{
-        background-image: url('../images/meditationt3.jpg');
+       
         background-repeat: no-repeat;
         background-size:cover;
         margin: 0;
