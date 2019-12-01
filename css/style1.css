@@ -361,21 +361,5 @@ label {
 
     }
 
-
-    .header{
-        background-image: url('../images/meditationt3.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        margin: 0;
-        padding: 10px;
-    }
-
-    nav {
-        display: none;
-        visibility: hidden;
-        padding: 0;
-        margin: 0;
-    }
-
 }
   /* END OF CONTACT FORM */
