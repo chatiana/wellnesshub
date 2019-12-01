@@ -123,7 +123,7 @@ footer img{
     background-color:white;
     padding: 20px 20px 2px 20px;
     border-radius: 6px;
-    width: 66%;
+    width: 750px;
     box-shadow:0 16px 40px rgba(0,0,0,0.12)
 }
 
@@ -292,6 +292,13 @@ label {
     font-weight: bolder;
 }
 
+.list-business-button:hover{
+    background-color: #11698c;
+    border-color: #11698c;
+    transition: ease 0.5s;
+}
+
+
 
 
   /* Responsive layout - when the screen is less than 768px wide*/
@@ -353,7 +360,6 @@ label {
         color:#16778C;
 
     }
-
 
 
     .header{
