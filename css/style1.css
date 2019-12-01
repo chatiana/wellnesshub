@@ -11,7 +11,7 @@ body{
 }
 .top-right a{
     text-decoration: none;
-    color:#16778C;
+   color:#16778C;
 }
 .top-right a:hover{
     color: rgb(235, 140, 106);
@@ -63,7 +63,6 @@ nav a:hover {
     height: 400px; 
 }
 
-
 footer{
     background-color: #16778c;
     display: flex;
@@ -98,3 +97,285 @@ footer img{
 .footer-col4 {
     margin: 50px;
 }
+
+
+/* FOR CONTACT PAGE - BY WILMIR */
+/*Styles the contact section*/
+.contact{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    background-image: url('../images/meditationt3.jpg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    background-size:cover;
+}
+
+/*Style the main container*/
+.contact-content{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top:20px;
+    margin-bottom:20px;
+    box-sizing: border-box;
+    background-color:white;
+    padding: 20px 20px 2px 20px;
+    border-radius: 6px;
+    width: 750px;
+    box-shadow:0 16px 40px rgba(0,0,0,0.12)
+}
+
+/* Divide the main container into 2 equal columns */
+.contact-content-col1, 
+.contact-content-col2 {
+    display:flex;
+    width: 50%;
+    flex-direction: column;
+    margin:10px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+/*Style the other contact information*/
+.contact-hours, .contact-address{
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*Style the other locate title*/
+.contact-locate{
+    text-transform:uppercase;
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: #11698c;
+    font-weight: bolder;    
+    margin-bottom: 10px;
+}
+
+
+/* Style the form, map, and article container */
+.contact-content-form, .contact-content-map, .contact-content-article{
+    padding: 20px;
+}
+
+/* Style the form header */
+.form-header{
+    font-size:30px;
+    float: left;
+    width: 100%;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+/* Style form inputs, and textareas */
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/*Set height of text-area*/
+textarea{
+    height:100px;
+}
+
+input:focus, textarea:focus{
+    border-color: #11698c;
+    transition: ease 0.2s;
+    outline:none;
+}
+
+
+/* Style the label to display next to the inputs */
+label {
+    display: inline-block;
+    font-size:14px;
+    font-weight: bolder;
+  }
+  
+  /* Floating column for inputs*/
+  .form-col {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+    box-sizing: border-box;
+  }
+  
+/*Styles the submit button*/
+#form-submit{
+    float: right;
+    width: 80px;
+    background-color: #11698c;
+    border-color: #11698c;
+    color:white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+/*Styles the submit button */
+#form-submit:hover{
+    background-color: #2999A6;
+    border-color: #2999A6;
+    color:white;
+    transition: ease 0.5s;
+}
+
+  /* Clear floats after the columns */
+  .form-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Styles the list business section*/
+.list-business-banner{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Styles the list business container*/
+.list-business-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 20px 0 0 0;
+    box-sizing: border-box;
+}
+
+/*Style the list business title*/
+.list-business-title{
+    align-self: left;
+    font-size: 12px;
+    font-weight: 100;
+    box-sizing: border-box;
+}
+
+
+
+/*Style the list business article*/
+.list-business-article{
+    align-self: center;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/*Styles the layout for the button container*/
+.list-business-button-container{
+    align-self: center;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.list-business-button{
+    background-color: black;
+    border-color:black;
+    border-radius: 4px;
+    color:white;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+.list-business-button:hover{
+    background-color: #11698c;
+    border-color: #11698c;
+    transition: ease 0.5s;
+}
+
+
+
+
+  /* Responsive layout - when the screen is less than 768px wide*/
+@media screen and (max-width: 768px) {   
+    /*Removes the background-image in the contact session*/ 
+    .contact{
+        background-image: none;
+        margin:0;
+        padding: 0;
+    }
+    
+    /* make the article, map, and form stack on top of each other */
+    .contact-content{
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color:transparent;
+        border-radius: 0;
+        width: 100%;
+        box-shadow:0;
+    }
+
+    /* make the article, map, and form stack on top of each other */
+    .contact-content-col1, 
+    .contact-content-col2 {
+        width: 100%;
+        padding:0;
+        margin-bottom:10;
+    }
+
+    /*Moves the background image to the heder*/
+    .form-header{
+        color:#16778C;
+        margin-top: 20px;
+        color:#16778C;
+    }
+
+    #form-submit{
+        width: 100%;
+    }
+
+    .contact-hours, .contact-address, .contact-locate{
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+
+    .contact-locate{
+        font-size:30px;
+        text-transform:none;
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        font-weight: bolder;
+        color:#16778C;
+
+    }
+
+
+    .header{
+        background-image: url('../images/meditationt3.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav {
+        display: none;
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+  /* END OF CONTACT FORM */
