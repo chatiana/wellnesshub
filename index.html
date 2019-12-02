@@ -62,7 +62,11 @@
                                       <div id="Meditation" class="tabcontent">
                                         <h1>MEDITATION</h1>
                                         <p>Select a date:</p>
-                                        <input type="date" name="date">
+                                        <select id="sortby">
+                                            <option value="priceUp">Price Low -> High</option>
+                                            <option value="priceDown">Price High -> Low</option> 
+                                            <option value="rating">Rating High -> Low</option> 
+                                        </select>
                                         <input type="submit" value= "Search WellnessHub">
                                       </div>
                                       
@@ -133,6 +137,7 @@
     <!--END of the PRODUCTS-->
 
     <!--The Start of the BannerAd-->
+
         <div class="banneradds">
             <p>Perspiciatis reiciendis vero dicta a architecto consectetur! </p>
             <button class="bannerbutton" type="button">List your Business</button>
