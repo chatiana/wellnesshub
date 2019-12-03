@@ -22,14 +22,27 @@ const displayLoginModal = () => {
     const container = document.createElement("div");
     container.setAttribute("id", "modalOverlay");
     container.className = "modal-overlay";
-    fetch("../loginModal.html")
-        .then(response => response.text())
-        .then(html => {
-            container.innerHTML = html;
-            document.body.appendChild(container);
-            document.querySelector("#loginForm")
-                .addEventListener("submit", submitLoginDetails, true);
-        });
+    container.innerHTML = `
+    <div id="loginModal" class="login-modal">
+        <div class="login-img-container">
+            <img src="images/logoweb.png" alt="wellness">
+        </div>
+        <form id="loginForm">
+            <div class="login-form-section">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="password" placeholder="Password" name="password" autocomplete="password" required>
+                <a class="login-password-reset-link" href="#">Forgot Password?</a>
+                <button  class="login-button" type="submit">Login</button>
+            </div>
+        </form>
+        <div class="login-register-link">
+            Don't have an account? <a href="register.html">Register Now!</a>
+        </div>
+    </div>
+    `;
+    document.body.appendChild(container);
+    document.querySelector("#loginForm")
+        .addEventListener("submit", submitLoginDetails, true);
     container.addEventListener("click", removeLoginModalOnClick, true);
 };
 
