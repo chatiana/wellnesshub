@@ -29,7 +29,7 @@ header button{
     border-style: solid 1px;
 }
 .headbutton1{
-    background-color: none;
+    background-color: whitesmoke;
     border: 2px solid #11698c;
     color: #2999A6;
 }
@@ -57,7 +57,7 @@ nav a:hover {
 .main1 img{
     width: 100%;
 }
-.banneradd{
+.banneradds{
     background-image: url('../images/yogasun.jpg');
     width: 100%;
     height: 400px; 
@@ -97,6 +97,152 @@ footer img{
 .footer-col4 {
     margin: 50px;
 }
+/* Hero Banner*/
+.hero-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:50px;
+}
+
+.hero-banner-background{
+    background-image: url('../images/meditationt3.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.hero-banner-sec-1{
+    padding: 10%;
+}
+.hero-banner-sec2{
+padding:10%;
+}
+.hero-banner-sec2 p{
+    font-size: 30pt;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.33%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #Yoga {background-color:#A0D9BE;}
+  #Meditation {background-color:#2999A6;}
+  #Retreats{background-color:#16778C;}
+
+.select-search{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10%;
+    position: relative;
+    font-family: Roboto;
+}
+
+#sortby{
+	padding: 12px 20px;
+	border: 3px solid #16778C;
+	border-radius: 10px;
+}
+
+        /*********/
+
+/*Index-products*/
+.products{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:10%;
+    margin-bottom:10%;
+}
+@media screen and (max-width: 768px) {  
+    .products{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .prd-dscr-btn{
+        width: 100%;
+    }
+}
+.product-1 {
+    padding: 5%;
+}
+.product-2 {
+    padding: 5%;
+}
+.product-3 {
+    padding: 5%;
+}
+.container {
+    position: relative;
+    width: 100%;
+  }
+.container img{
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #11698c;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  .text {
+    color: #A0D9BE;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .prd-dscr-btn{
+    background-color:  #2999A6;
+    border-color: #2999A6;
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    border-style: solid 1px;
+    padding: 10px 20px;
+  }
+  .prd-dscr-btn:hover{
+      background-color: #11698c;
+      color: #f1f1f1;
+  }
+/*End of Index-products*/
 
 
 /* FOR CONTACT PAGE - BY WILMIR */
@@ -105,11 +251,8 @@ footer img{
     display:flex;
     justify-content:center;
     flex-direction: row;
-    background-image: url('../images/meditationt3.jpg');
-    background-repeat: no-repeat;
     background-color: transparent;
-    width: 100%;
-    background-size:cover;
+   width: 100%;
 }
 
 /*Style the main container*/
@@ -117,26 +260,28 @@ footer img{
     display:flex;
     justify-content:center;
     flex-direction: row;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:30px;
+    margin-bottom:30px;
     box-sizing: border-box;
-    background-color:white;
-    padding: 20px 20px 2px 20px;
-    border-radius: 6px;
-    width: 750px;
+    padding: 0;
+    background-color: white;
+    border-radius: 8px;
+    width: 768px;
     box-shadow:0 16px 40px rgba(0,0,0,0.12)
 }
 
 /* Divide the main container into 2 equal columns */
 .contact-content-col1, 
-.contact-content-col2 {
+.contact-content-col2{
     display:flex;
     width: 50%;
     flex-direction: column;
-    margin:10px;
-    padding: 0px 20px;
+    margin:0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
+
 
 /*Style the other contact information*/
 .contact-hours, .contact-address{
@@ -144,7 +289,7 @@ footer img{
     font-size: 14px;
     text-align: center;
     margin-bottom: 5px;
-}
+    color:#11698c;}
 
 /*Style the other locate title*/
 .contact-locate{
@@ -152,7 +297,7 @@ footer img{
     margin-top: 30px;
     font-size: 15px;
     text-align: center;
-    color: #11698c;
+    color:#11698c;
     font-weight: bolder;    
     margin-bottom: 10px;
 }
@@ -241,6 +386,7 @@ label {
 
 /*Styles the list business section*/
 .list-business-banner{
+    background-color: #ededed;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -252,7 +398,7 @@ label {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    margin: 20px 0 0 0;
+    margin: 50px 0 30px 0;
     box-sizing: border-box;
 }
 
@@ -298,6 +444,36 @@ label {
     transition: ease 0.5s;
 }
 
+/*Styles for the social media icons*/
+.instagram_icon, 
+.facebook_icon,
+.twitter_icon,
+.youtube_icon {
+    width: 25px;
+    fill:gray;
+}
+
+.instagram_icon:hover, 
+.facebook_icon:hover,
+.twitter_icon:hover,
+.youtube_icon:hover {
+    fill:#16778C;
+    transition: ease 0.3s;
+}
+
+
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon{
+    padding: 10px;
+}
+/*End of styles for the social media icons*/
+
 
 
 
@@ -326,11 +502,13 @@ label {
 
     /* make the article, map, and form stack on top of each other */
     .contact-content-col1, 
-    .contact-content-col2 {
+    .contact-content-col2{
         width: 100%;
         padding:0;
         margin-bottom:10;
     }
+  
+
 
     /*Moves the background image to the heder*/
     .form-header{
@@ -357,8 +535,10 @@ label {
         margin-bottom: 12px;
         box-sizing: border-box;
         font-weight: bolder;
-        color:#16778C;
+    }
 
+    .list-business-container{
+        width: 70%;
     }
 
 }
