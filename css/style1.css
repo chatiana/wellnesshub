@@ -251,11 +251,8 @@ padding:10%;
     display:flex;
     justify-content:center;
     flex-direction: row;
-    background-image: url('../images/meditationt3.jpg');
-    background-repeat: no-repeat;
     background-color: transparent;
-    width: 100%;
-    background-size:cover;
+   width: 100%;
 }
 
 /*Style the main container*/
@@ -263,19 +260,19 @@ padding:10%;
     display:flex;
     justify-content:center;
     flex-direction: row;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:30px;
+    margin-bottom:30px;
     box-sizing: border-box;
-    background-color:white;
     padding: 0;
-    border-radius: 6px;
-    width: 750px;
+    background-color: white;
+    border-radius: 8px;
+    width: 768px;
     box-shadow:0 16px 40px rgba(0,0,0,0.12)
 }
 
 /* Divide the main container into 2 equal columns */
 .contact-content-col1, 
-.contact-content-col2 {
+.contact-content-col2{
     display:flex;
     width: 50%;
     flex-direction: column;
@@ -285,13 +282,14 @@ padding:10%;
 }
 
 
+
 /*Style the other contact information*/
 .contact-hours, .contact-address{
     margin-top: 5px;
     font-size: 14px;
     text-align: center;
     margin-bottom: 5px;
-}
+    color:#11698c;}
 
 /*Style the other locate title*/
 .contact-locate{
@@ -299,7 +297,7 @@ padding:10%;
     margin-top: 30px;
     font-size: 15px;
     text-align: center;
-    color: #11698c;
+    color:#11698c;
     font-weight: bolder;    
     margin-bottom: 10px;
 }
@@ -379,6 +377,42 @@ label {
     transition: ease 0.5s;
 }
 
+
+
+/*Styles the confirmation message*/
+.confirmation-message-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+
+.confirmation-message{
+    font-size: 12px;
+    font-style: italic;
+    font-weight:bolder;
+    text-align: center;
+    color:gray;
+}
+
+
+/*Styles the yoga-monkey-container*/
+.yoga-monkey-container{
+    padding:20px;
+}
+
+/*Styles the yoga-monkey-icon*/
+.yoga-monkey-icon{
+    width: 120px;
+    fill:#2999A6;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
   /* Clear floats after the columns */
   .form-row:after {
     content: "";
@@ -388,6 +422,7 @@ label {
 
 /*Styles the list business section*/
 .list-business-banner{
+    background-color: #ededed;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -399,18 +434,16 @@ label {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    margin: 20px 0 0 0;
+    margin: 50px 0 30px 0;
     box-sizing: border-box;
 }
 
 /*Style the list business title*/
 .list-business-title{
-    align-self: left;
     font-size: 12px;
     font-weight: 100;
     box-sizing: border-box;
 }
-
 
 
 /*Style the list business article*/
@@ -445,6 +478,36 @@ label {
     transition: ease 0.5s;
 }
 
+/*Styles for the social media icons*/
+.instagram_icon, 
+.facebook_icon,
+.twitter_icon,
+.youtube_icon {
+    width: 30px;
+    fill:gray;
+}
+
+.instagram_icon:hover, 
+.facebook_icon:hover,
+.twitter_icon:hover,
+.youtube_icon:hover {
+    fill:#16778C;
+    transition: ease 0.3s;
+}
+
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icon{
+    padding: 10px;
+}
+/*End of styles for the social media icons*/
+
 
 
 
@@ -468,16 +531,18 @@ label {
         background-color:transparent;
         border-radius: 0;
         width: 100%;
-        box-shadow:0;
+        box-shadow:unset;
     }
 
     /* make the article, map, and form stack on top of each other */
     .contact-content-col1, 
-    .contact-content-col2 {
+    .contact-content-col2{
         width: 100%;
         padding:0;
-        margin-bottom:10;
+        margin-bottom:10px;
     }
+  
+
 
     /*Moves the background image to the heder*/
     .form-header{
@@ -504,25 +569,23 @@ label {
         margin-bottom: 12px;
         box-sizing: border-box;
         font-weight: bolder;
-        color:#16778C;
-
     }
 
+    .list-business-container{
+        width: 70%;
+    }
 
-    .header{
-       
-        background-repeat: no-repeat;
-        background-size:cover;
-        margin: 0;
+    .instagram_icon, 
+    .facebook_icon,
+    .twitter_icon,
+    .youtube_icon {
+        width: 40px;
+        fill:gray;
         padding: 10px;
+        margin: 10px 0;
     }
 
-    nav {
-        display: none;
-        visibility: hidden;
-        padding: 0;
-        margin: 0;
-    }
+
 
 }
   /* END OF CONTACT FORM */
