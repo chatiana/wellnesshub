@@ -377,6 +377,42 @@ label {
     transition: ease 0.5s;
 }
 
+
+
+/*Styles the confirmation message*/
+.confirmation-message-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 0 0;
+}
+
+
+.confirmation-message{
+    font-size: 12px;
+    font-style: italic;
+    font-weight:bolder;
+    text-align: center;
+    color:gray;
+}
+
+
+/*Styles the yoga-monkey-container*/
+.yoga-monkey-container{
+    padding:20px;
+}
+
+/*Styles the yoga-monkey-icon*/
+.yoga-monkey-icon{
+    width: 120px;
+    fill:#2999A6;
+    display: block;
+    margin-top: 20px;
+}
+
+
+
   /* Clear floats after the columns */
   .form-row:after {
     content: "";
@@ -404,12 +440,10 @@ label {
 
 /*Style the list business title*/
 .list-business-title{
-    align-self: left;
     font-size: 12px;
     font-weight: 100;
     box-sizing: border-box;
 }
-
 
 
 /*Style the list business article*/
@@ -449,7 +483,7 @@ label {
 .facebook_icon,
 .twitter_icon,
 .youtube_icon {
-    width: 25px;
+    width: 30px;
     fill:gray;
 }
 
@@ -462,11 +496,11 @@ label {
 }
 
 
-
 .social-container{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .social-icon{
@@ -497,7 +531,7 @@ label {
         background-color:transparent;
         border-radius: 0;
         width: 100%;
-        box-shadow:0;
+        box-shadow:unset;
     }
 
     /* make the article, map, and form stack on top of each other */
@@ -505,7 +539,7 @@ label {
     .contact-content-col2{
         width: 100%;
         padding:0;
-        margin-bottom:10;
+        margin-bottom:10px;
     }
   
 
@@ -540,6 +574,18 @@ label {
     .list-business-container{
         width: 70%;
     }
+
+    .instagram_icon, 
+    .facebook_icon,
+    .twitter_icon,
+    .youtube_icon {
+        width: 40px;
+        fill:gray;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+
 
 }
   /* END OF CONTACT FORM */
