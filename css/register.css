@@ -1,0 +1,95 @@
+.register {
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    background-image: url('../images/yogasun.jpg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    background-size:cover;
+}
+
+.register-header {
+    font-size:30px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.register-card {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color:white;
+    padding: 0;
+    border-radius: 6px;
+    width: 750px;
+    box-shadow:0 16px 40px rgba(0,0,0,0.12);
+}
+
+.register-card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.register-card-column-left, .register-card-column-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.register-form {
+    padding: 20px;
+}
+
+.register input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.register input:focus {
+    border-color: #11698c;
+    transition: ease 0.2s;
+    outline:none;
+}
+
+.register button[type=submit] {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+    border-style: solid 1px;
+    background-color: #11698c;
+    border-color: #11698c;
+    color: #A0D9BE;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+
+.register button[type=submit]:hover {
+    background-color: #2999A6;
+    border-color: #2999A6;
+    color:white;
+    transition: ease 0.3s;
+}
+
+@media screen and (min-width: 800px) {
+    .register-card-column-left {
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    .register-card-column-right {
+        flex: 1;
+        padding-left: 10px;
+    }
+}
