@@ -412,7 +412,6 @@ label {
 }
 
 
-
   /* Clear floats after the columns */
   .form-row:after {
     content: "";
@@ -500,7 +499,6 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .social-icon{
