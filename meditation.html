@@ -9,7 +9,7 @@
         <!-- css Stylesheets -->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style1.css">
-        <link rel="stylesheet" type="text/css" href="css/meditstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/medi-yoga-style.css">
         <!-- jQuery library -->
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
@@ -28,7 +28,6 @@
             <button class="headbutton1" type="button">Register</button>
             <button class="headbutton2" type="button"> Login </button>
         </div>
-    
     </header>
 
     <!-- Menu Bar -->
@@ -43,40 +42,52 @@
     <!-- Main Section -->
 
     <div class="main">
-
-        <div class="search">
-            <input type="text" placeholder="Search..." id="searchbar" size="30"> 
-            <select id="sortby">
-                <option value="priceUp">Price Low -> High</option>
-                <option value="priceDown">Price High -> Low</option> 
-                <option value="rating">Rating High -> Low</option> 
-            </select>
+        <div class="heading">
+            <h1>Meditation</h1>
         </div>
 
-        <div class="cards">
+        <div class="search">
+            <input type="text" placeholder="Search by Name or Location!" id="searchbar" size="30">
+        </div>
 
-            <div class="card">
+        <div class="cards" id="lem">
+            <h2 id="searchResults">Browse through the listings</h2> 
+            <div class="card" id="lol">
                 <div class="card_displayed">
                     <div class="carousel">
-                        
+                      <div class="mySlides1">
+                        <img src="images/meditation/meditation11.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides1">
+                        <img src="images/meditation/meditation12.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides1">
+                        <img src="images/meditation/meditation13.jpg" style="width:100%">
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                     </div>
                     <div class="info">
-                        <p value="Silent,Gardens">Silent Gardens</p>
-                        <p value="Dublin,Ireland">Dublin, Ireland</p>
+                        <input type="hidden" name="" value="dublin ireland silent gardens"> <!-- KEYWORDS IN HERE!! -->
+                        <p>Silent Gardens</p>
+                        <p style="font-size:24px">Dublin, Ireland</p>
                         <p id="rating">Rating: 3.5/5</p>
                         <p class="stars" style="--rating: 3.5;"></p>
                     </div>
                     <div class="maps">
-                        <iframe width="300" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EhpQZWFyc2UgU3QsIER1YmxpbiwgSXJlbGFuZCIuKiwKFAoSCXn6nJGRDmdIEdH_Ais8rtBxEhQKEgkvrCfqgA5nSBGgcTGXqccACg&key=AIzaSyDYJvTx8LQe_DBM-Avw0wC_98ArpWhvnGA" allowfullscreen></iframe>
+                        <iframe width="400px" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EhpQZWFyc2UgU3QsIER1YmxpbiwgSXJlbGFuZCIuKiwKFAoSCXn6nJGRDmdIEdH_Ais8rtBxEhQKEgkvrCfqgA5nSBGgcTGXqccACg&key=AIzaSyDYJvTx8LQe_DBM-Avw0wC_98ArpWhvnGA" allowfullscreen></iframe>
                     </div>
                     <div class="deals">
                         <ul id="deal1">
-                            <li>Deal 1</li>
-                            <li>Time/Duration</li>
+                            <li>3 classes - 1 hour each</li>
+                            <li>Starting at €29.99</li>
                         </ul>
                         <ul id="deal2">
-                            <li>Deal 2</li>
-                            <li>Time/Duration</li>
+                            <li>10 classes - 1 hour each</li>
+                            <li>Starting at €69.99</li>
                         </ul>
                     </div>
                 </div>
@@ -85,19 +96,28 @@
                     <div class="content">
                         <div class="timetable">
                             <ul>
-                                <li><p>Monday 09:00 - 17:00 </p></li>
-                                <li><p>Tuesday 09:00 - 17:00 </p></li>
-                                <li><p>Wednesday 09:00 - 17:00 </p></li>
-                                <li><p>Thursday 09:00 - 17:00 </p></li>
-                                <li><p>Friday 09:00 - 17:00 </p></li>
-                                <li><p>Saturday 12:00 - 16:00 </p></li>
-                                <li><p>Sunday 12:00 - 16:00 </p></li>
+                                <li><p>Monday</p></li>
+                                <li><p>Tuesday</p></li>
+                                <li><p>Wednesday</p></li>
+                                <li><p>Thursday</p></li>
+                                <li><p>Friday</p></li>
+                                <li><p>Saturday </p></li>
+                                <li><p>Sunday</p></li>
+                            </ul>
+                            <ul>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>12:00 - 16:00 </p></li>
+                                <li><p>12:00 - 16:00 </p></li>
                             </ul>
                         </div>
                          <div class="details">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tincidunt ultrices. Praesent vel tristique dui. Sed luctus nunc quis sem mollis, semper luctus nisi lobortis. In hac habitasse platea dictumst. Duis venenatis est leo, at porta justo vestibulum sit amet. Nunc ac fringilla diam. Aenean sollicitudin at urna et varius. Mauris vel erat sit amet libero dictum fermentum sed id erat. Fusce porta erat eget magna maximus, vehicula efficitur risus auctor. Mauris non dictum urna, non dignissim mauris. Suspendisse et diam ut orci porta fringilla vitae id lectus. Suspendisse potenti. Mauris condimentum eros sit amet vehicula suscipit. Sed commodo eget purus nec tincidunt. In tempus imperdiet ligula et suscipit. Fusce in risus mattis velit accumsan aliquet.
+                            <p>Love is a great healer, a harmonizer that can bring genuine joy to our relationships and great peace, meaning and happiness to our lives. However, is it possible to remain open-hearted and loving in the face of difficult people, betrayal and hurt? Thankfully the answer is, Yes!<br><br>
 
-                            Proin id ante non libero accumsan dapibus eget in magna. Nunc vestibulum purus lectus. Duis auctor eget orci quis blandit. Fusce consectetur viverra erat. Sed lectus metus, semper eu lorem eget, faucibus venenatis nibh. Nullam vehicula cursus nunc finibus commodo. Maecenas vehicula aliquet ligula at convallis. Nulla tempor elit quis est imperdiet viverra. Sed vehicula vitae odio id posuere. Vestibulum varius lectus eget diam tincidunt, et suscipit neque tristique. Praesent et vehicula sapien. Etiam eleifend, felis nec venenatis feugiat, nulla ante facilisis lectus, sit amet dictum ligula sapien auctor libero.</p>
+                            In this series, we will explore the innate potential for deep and authentic love, inner peace and happiness that exists within each and every one of us. We will discover how meditation can enable us to develop confidence in, and fully actualise this potential for love. We will explore how learning to maintain genuine love in our heart at all times, in all situations, will encourage us to overcome any tendencies we may have for living defensively, and learn how to let go of unhelpful feelings of hurt, anger or resentment. Indeed, as we will see, our wounds and past difficulties in relationships, can serve as the springboard for our own personal growth and development.</p>
                         </div>
                         <div class="info_button">
                             <a href="http://www.google.com"><button type="button">Go to Venue</button></a>
@@ -105,24 +125,45 @@
                     </div>
                 </div>
             </div>
+
+
 
             <div class="card">
                 <div class="card_displayed">
                     <div class="carousel">
+                        <div class="mySlides2">
+                            <img src="images/meditation/meditation21.jpg" style="width:100%">
+                        </div>
 
+                        <div class="mySlides2">
+                            <img src="images/meditation/meditation22.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides2">
+                            <img src="images/meditation/meditation23.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
                     </div>
                     <div class="info">
-                        <ul>
-                            <li><p>Name of Place </p></li>
-                            <li><p>Reviews: 4/5</p></li>
-                            <li><p>Location </p></li>
-                            <li><p>Show on Map</p></li>
-                        </ul>
+                        <input type="hidden" name="" value="cork ireland country falls"> <!-- keywords in here -->
+                        <p>Country Falls</p>
+                        <p style="font-size:24px">Cork, Ireland</p>
+                        <p id="rating">Rating: 4.5/5</p>
+                        <p class="stars" style="--rating: 4.5;"></p>
+                    </div>
+                    <div class="maps">
+                        <iframe width="400px" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EhpQZWFyc2UgU3QsIER1YmxpbiwgSXJlbGFuZCIuKiwKFAoSCXn6nJGRDmdIEdH_Ais8rtBxEhQKEgkvrCfqgA5nSBGgcTGXqccACg&key=AIzaSyDYJvTx8LQe_DBM-Avw0wC_98ArpWhvnGA" allowfullscreen></iframe>
                     </div>
                     <div class="deals">
-                        <ul>
-                            <li>Deal 1</li>
-                            <li>Deal 2</li>
+                        <ul id="deal1">
+                            <li>3 classes - 1 hour each</li>
+                            <li>Starting at €29.99</li>
+                        </ul>
+                        <ul id="deal2">
+                            <li>10 classes - 1 hour each</li>
+                            <li>Starting at €69.99</li>
                         </ul>
                     </div>
                 </div>
@@ -131,13 +172,22 @@
                     <div class="content">
                         <div class="timetable">
                             <ul>
-                                <li><p>Monday 09:00 - 17:00 </p></li>
-                                <li><p>Tuesday 09:00 - 17:00 </p></li>
-                                <li><p>Wednesday 09:00 - 17:00 </p></li>
-                                <li><p>Thursday 09:00 - 17:00 </p></li>
-                                <li><p>Friday 09:00 - 17:00 </p></li>
-                                <li><p>Saturday 12:00 - 16:00 </p></li>
-                                <li><p>Sunday 12:00 - 16:00 </p></li>
+                                <li><p>Monday</p></li>
+                                <li><p>Tuesday</p></li>
+                                <li><p>Wednesday</p></li>
+                                <li><p>Thursday</p></li>
+                                <li><p>Friday</p></li>
+                                <li><p>Saturday </p></li>
+                                <li><p>Sunday</p></li>
+                            </ul>
+                            <ul>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>09:00 - 17:00 </p></li>
+                                <li><p>12:00 - 16:00 </p></li>
+                                <li><p>12:00 - 16:00 </p></li>
                             </ul>
                         </div>
                          <div class="details">
@@ -151,7 +201,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -185,6 +234,6 @@
             </ul>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/js/medi-yoga-script.js"></script>
 </body>
 </html>
