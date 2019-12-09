@@ -40,7 +40,7 @@
 /*Heading styles*/
 .heading {
 	padding: 5px;
-	margin: 10px;
+	margin: 10px 10px 20px 10px;
 }
 
 #heading-title {
@@ -58,7 +58,7 @@
 	background-color: white;
     border-radius: 6px;
     box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .card_displayed {
@@ -81,6 +81,7 @@
 
 .carousel img{
 	width: 100%;
+	border-radius: 2px;
 }
 
 /* Hide the images in slides by default */
@@ -94,7 +95,7 @@
 	position: absolute;
 	top: 50%;
 	width: auto;
-	margin-top: -22px;
+	margin-top: -30px;
 	padding: 16px;
 	color: white;
 	font-weight: bold;
@@ -182,7 +183,8 @@
 }
 
 #deal1:hover, #deal2:hover{
-	background-color: #dcdcdc;
+	background-color: #e9ebee;
+	transition: ease 0.3s;
 }
 
 
@@ -213,18 +215,24 @@
 	--percent: calc(var(--rating) / 5 * 100%);
 	--star-size: 15px;
 	--star-color: #fff;
-	--star-background: #fc0;
+	--star-background: #16778C;
 	font-size: var(--star-size);
-	font-family: Times;
 }
 
-.stars::before {
+.stars::before {	
     content: '★★★★★';
     letter-spacing: 3px;
     background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+:root {
+	--star-size: 20px;
+	--star-color: #fff;
+	--star-background: #fc0;
+  }
+  
 
 /*Styling collapsible*/
 
@@ -238,11 +246,18 @@
 	text-align: left;
 	outline: none;
 	font-size: 14px;
-	border-radius: 0 0 6px 6px;
+	border-radius:0 0 6px 6px;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
+	background-color: #606060;
+	transition: ease 0.3s;
+}
+
+
+.active{
 	background-color: #a9a9a9;
+	border-radius:0;
 }
 
 .content {
@@ -252,18 +267,20 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   line-height: 1.5em;
+  border-radius:0 0 6px 6px;
 }
 
-.collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+.collapsible::after {
+  content: "\271A"; /* Unicode character for "plus" sign (+) */
   font-size: 14px;
-  color: red;
+  color: white; 
   float: right;
   margin-left: 5px;
 }
 
-.active:after {
+.active::after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: white; 
 }
 
 .collapse-option {
@@ -275,17 +292,15 @@
 
 .collapse_button{
 	font-size: 14px;
-	background-color: gray;
-	color:white;
+	background-color:white;
+	color:gray;
 	border-radius: 2px;
+	border:none;
 }
 
-
-
-:root {
-  --star-size: 20px;
-  --star-color: #fff;
-  --star-background: #fc0;
+.collapse_button:hover{
+	background-color:gray;
+	color:white;
 }
 
 
@@ -319,7 +334,7 @@
 /*Media Query*/
 @media screen and (max-width: 768px) {   
 .card {
-	margin: 10px;
+	margin: 10px 15px 2em 15px;
 }
 
 .card_displayed_main {
@@ -328,6 +343,10 @@
 
 #deal1, #deal2{
 	flex-direction: column;
+}
+
+.bookbutton{
+	padding: 10px;
 }
 
 }
