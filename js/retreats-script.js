@@ -145,3 +145,21 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
+
+
+//Animates carousel on hover
+var animationIndex = 0;
+
+(function animateSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  animationIndex++;
+  if (animationIndex > slides.length) {animationIndex = 1}  
+
+  slides[animationIndex-1].style.display = "block";  
+  setTimeout(animateSlides, 3000); // Change image every 2 seconds
+})();
