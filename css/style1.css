@@ -20,6 +20,7 @@ header img{
     width: 120px;
     height: 120px;
 }
+
 header button{
     padding: 10px 20px;
     text-align: center;
@@ -398,17 +399,13 @@ label {
 }
 
 
-/*Styles the yoga-monkey-container*/
-.yoga-monkey-container{
-    padding:20px;
-}
-
-/*Styles the yoga-monkey-icon*/
-.yoga-monkey-icon{
+/*Styles the logo*/
+.logo img{
     width: 120px;
     fill:#2999A6;
     display: block;
     margin-top: 20px;
+    padding:20px;
 }
 
 
@@ -475,6 +472,14 @@ label {
     background-color: #11698c;
     border-color: #11698c;
     transition: ease 0.5s;
+}
+
+
+/*Styles the map*/
+#hubmap{
+	width:100%;
+	height:185px;
+	border-radius: 6px;
 }
 
 /*Styles for the social media icons*/
