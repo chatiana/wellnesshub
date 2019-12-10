@@ -11,9 +11,14 @@
         <link rel="stylesheet" type="text/css" href="css/style1.css">
         <link rel="stylesheet" type="text/css" href="css/loginModal.css">
         <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
         <!-- Font-awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
 </head>
 
 <body>
@@ -79,9 +84,9 @@
                                       </div>
                                       
                                       
-                                      <button class="tablink" onclick="openCity('Yoga', this, '#A0D9BE')" id="defaultOpen">Yoga</button>
-                                      <button class="tablink" onclick="openCity('Meditation', this, '#2999A6')">Meditation</button>
-                                      <button class="tablink" onclick="openCity('Retreats', this, '#16778C')">Retreats</button>
+                                      <button class="tablink" onclick="openService('Yoga', this, '#A0D9BE')" id="defaultOpen">Yoga</button>
+                                      <button class="tablink" onclick="openService('Meditation', this, '#2999A6')">Meditation</button>
+                                      <button class="tablink" onclick="openService('Retreats', this, '#16778C')">Retreats</button>
                                       
                                       
                         </div>
@@ -137,6 +142,38 @@
     </article>
     <!--END of the PRODUCTS-->
 
+    <!--Counter for stats and display animation-->
+    <div class="middle">
+        <div class="counting-sec">
+          <div class="inner-width">
+            <div class="col">
+              <i class="far fa-smile-wink"></i>
+              <div class="num">280</div>
+              Yogis
+            </div>
+    
+            <div class="col">
+              <i class="fas fa-om"></i>
+              <div class="num">50</div>
+              Yoga Centers
+            </div>
+    
+            <div class="col">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <div class="num">35</div>
+              Independent Instructors
+            </div>
+    
+            <div class="col">
+                <i class="fas fa-binoculars"></i>
+              <div class="num">40</div>
+              Classes
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!--End of counter animation-->
     <!--The Start of the BannerAd-->
 
         <div class="banneradds">
@@ -175,8 +212,12 @@
         </div>
     </footer>
      <!--The End of the footer-->
+
+
+    <!-- ############################################################## -->
+    <!--tab-content script-->
      <script>
-            function openCity(cityName,elmnt,color) {
+            function openService(cityName,elmnt,color) {
               var i, tabcontent, tablinks;
               tabcontent = document.getElementsByClassName("tabcontent");
               for (i = 0; i < tabcontent.length; i++) {
@@ -193,6 +234,12 @@
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
             </script>
+
+    <!--log in & register js-->
     <script src="./js/index.js"></script>
+    <!--Counter script-->
+    <script type="text/javascript">
+        $(".num").counterUp({delay:10,time:1000});
+    </script>
 </body>
 </html>
