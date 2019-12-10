@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+<body>
+
+<h2>Automatic Slideshow</h2>
+<p class="tester">Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="palawan-1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="palawan-2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="palawan-3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+
+
+<script>
+
+document.querySelector('.tester').addEventListener('mouseover',animateSlides);
+document.querySelector('.tester').addEventListener('mouseout',removeAnimation);
+
+var animationIndex = 0;
+var slideshow;
+
+function animateSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  animationIndex++;
+  if (animationIndex > slides.length) {animationIndex = 1}  
+
+  slides[animationIndex-1].style.display = "block";  
+  slideshow = setTimeout(animateSlides, 1500); // Change image every 2 seconds
+}
+
+function removeAnimation() {
+    clearTimeout(slideshow);
+}
+
+
+</script>
+
+</body>
+</html> 
