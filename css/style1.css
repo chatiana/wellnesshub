@@ -244,6 +244,40 @@ padding:10%;
   }
 /*End of Index-products*/
 
+/*Style for counter*/
+.middle{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  .counting-sec{
+    padding: 40px 0;
+    width: 100%;
+    background: linear-gradient(90deg,#11698c,#82ccdd);
+  }
+  .inner-width{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+  .col{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .col i{
+    font-size: 40px;
+    color: #333;
+  }
+  .num{
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+/*End of style for counter*/
 
 /* FOR CONTACT PAGE - BY WILMIR */
 /*Styles the contact section*/
