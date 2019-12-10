@@ -43,7 +43,7 @@
             <div class = "contact-content-col1">
                 <div class = "contact-content-form">
                         <!-- Add form here-->
-                        <form name = 'contact' action="https://formspree.io/xaynbblp" method="POST" target="_blank">
+                        <form name = 'contact' onsubmit="return false">
                             <div class = 'form-row'>
                                 <div class = 'form-header'>
                                     <div>Get in touch</div>
@@ -79,8 +79,8 @@
                     <div class = "contact-content-map">
                             <!-- Render map here -->
                             <div class = "contact-locate">Locating The Wellness Hub</div>    
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6733885496565!2d-6.245000784359713!3d53.34910257997959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e0!3m2!1sen!2sie!4v1575124202751!5m2!1sen!2sie" width="100%" style="border:0;" allowfullscreen=""></iframe>
-                    </div> 
+                            <div id = "hubmap"></div>    
+                        </div> 
                     <div class = "contact-content-article">
                             <!-- Add some information about address, opening times, and other contact information here -->
                             <div class = "contact-address"><div>Our office is located at Mayor Street Lower, International Financial Services Centre, Dublin</div></div>    
@@ -192,6 +192,8 @@
     </footer>
     <script src="./js/index.js"></script>
     <script src ="./js/contact.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCASrjvTxtSFwnA6jGZbKYQAA4MvpwqcFc&callback=contactMap"></script>
+
     
 
 
