@@ -94,7 +94,10 @@ footer img{
     height: 90px;
 }
 .footer-col1 {
-    margin: 50px;
+    /*margin: 40px;*/
+}
+.social-media i{
+    padding:10px;
 }
 .footer-col2 {
     margin: 50px;
@@ -110,16 +113,15 @@ footer img{
     text-align: center;
 }
 hr{
-    border-style: groove;
+    border-top: 0.5px solid #f1f1f1;
     display: block;
     margin-top:0;
     margin-left: 5%;
     margin-right: 5%;
-    color:red;
 }
 .p-bottom{
     background-color: #16778c;
-    color: #b5b3af;
+    color: #f1f1f1;
     margin-bottom: 0;
 }
 
@@ -299,7 +301,7 @@ padding:10%;
   }
   .col i{
     font-size: 40px;
-    color: #333;
+    color: orange;
   }
   .num{
     font-size: 40px;
@@ -313,7 +315,6 @@ padding:10%;
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/yogabanner1.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
-    position: absolute;
     width: 100%;
     height: 400px; 
     text-align: center;
@@ -322,6 +323,7 @@ padding:10%;
 .pbanner{
     font-size: 25pt;
     font-weight: bold;
+    margin-top:15%;
 }
 
 .bannerbutton{
@@ -332,8 +334,7 @@ padding:10%;
     cursor: pointer;
     border-radius:16px ;
     padding: 10px 30px;
-    position: absolute;
-    margin-top:5%;
+    margin-top:10%;
 }
 
 .bannerbutton:hover{
