@@ -114,6 +114,7 @@ footer img{
 .social-media i{
     padding:10px;
     color:#A0D9BE;
+    cursor: pointer;
 }
 .footer-col2 {
     margin: 50px;
