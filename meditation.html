@@ -5,11 +5,12 @@
     <meta name="author" content="Group H">
     <meta name="description" content="WellnessHub">
     <meta name="keywords" content="wellness, yoga, meditation, retreats ">
-    <title>Meditation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDITATION</title>
         <!-- css Stylesheets -->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style1.css">
-        <link rel="stylesheet" type="text/css" href="css/medi-yoga-style.css">
+        <link rel="stylesheet" type="text/css" href="css/yoga-meditation-retreats.css">
         <!-- jQuery library -->
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
@@ -40,167 +41,257 @@
     </nav>
 
     <!-- Main Section -->
-
     <div class="main">
-        <div class="heading">
-            <h1>Meditation</h1>
-        </div>
-
+        <div class = "retreat-container">
         <div class="search">
             <input type="text" placeholder="Search by Name or Location!" id="searchbar" size="30">
         </div>
 
+        <div class="heading">
+            <div id = "heading-title" >Wellness Hub Meditation</div>
+            <div id="searchResults">One-of-a-kind meditation activities</div> 
+        </div>
+
         <div class="cards" id="lem">
-            <h2 id="searchResults">Browse through the listings</h2> 
             <div class="card" id="lol">
                 <div class="card_displayed">
-                    <div class="carousel">
-                      <div class="mySlides1">
-                        <img src="images/meditation/meditation11.jpg" style="width:100%">
-                      </div>
+                    <div class = "card_displayed_main">
+                        <div class="carousel">
+                                <div class="mySlides1 fade">
+                                    <img src="images/meditation/meditation11.jpg" style="width:100%">
+                                </div>
+            
+                                <div class="mySlides1 fade">
+                                    <img src="images/meditation/meditation12.jpg" style="width:100%">
+                                </div>
+            
+                                <div class="mySlides1 fade">
+                                    <img src="images/meditation/meditation13.jpg" style="width:100%">
+                                </div>
 
-                      <div class="mySlides1">
-                        <img src="images/meditation/meditation12.jpg" style="width:100%">
-                      </div>
-
-                      <div class="mySlides1">
-                        <img src="images/meditation/meditation13.jpg" style="width:100%">
-                      </div>
-
-                      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                    </div>
-                    <div class="info">
-                        <input type="hidden" name="" value="dublin ireland silent gardens"> <!-- KEYWORDS IN HERE!! -->
-                        <p>Silent Gardens</p>
-                        <p style="font-size:24px">Dublin, Ireland</p>
-                        <p id="rating">Rating: 3.5/5</p>
-                        <p class="stars" style="--rating: 3.5;"></p>
-                    </div>
-                    <div class="maps">
-                        <iframe width="400px" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EhpQZWFyc2UgU3QsIER1YmxpbiwgSXJlbGFuZCIuKiwKFAoSCXn6nJGRDmdIEdH_Ais8rtBxEhQKEgkvrCfqgA5nSBGgcTGXqccACg&key=AIzaSyDYJvTx8LQe_DBM-Avw0wC_98ArpWhvnGA" allowfullscreen></iframe>
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                        <div class="info">
+                            <input type="hidden" name="" value="pdublin ireland silent gardens"> <!-- KEYWORDS IN HERE!! -->
+                            <div class = 'retreat-title'>Silent Gardens</div>
+                            <div class = 'retreat-location'>
+                                    <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                        <path d="M12,0C7.8,0,4,3.4,4,7.6c0,4.2,3.5,9.2,8,16.4c4.5-7.2,8-12.2,8-16.4C20,3.4,16.2,0,12,0z M12,11c-1.7,0-3-1.3-3-3 s1.3-3,3-3s3,1.3,3,3S13.7,11,12,11z"/>
+                                </svg> Dublin, Ireland
+                            </div>
+                            <div class = 'rating-container'>
+                                <div class="stars" style="--rating: 3.5;"></div>
+                                <div id="rating"> (3.5/5)</div>
+                            </div>
+                            <div class = 'retreat-content'>
+                                <p>Love is a great healer, a harmonizer that can bring genuine joy to our relationships and great peace, meaning and happiness to our lives</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="deals">
-                        <ul id="deal1">
-                            <li>3 classes - 1 hour each</li>
-                            <li>Starting at €29.99</li>
-                        </ul>
-                        <ul id="deal2">
-                            <li>10 classes - 1 hour each</li>
-                            <li>Starting at €69.99</li>
-                        </ul>
+                        <div id = "deal1">
+                            <ul>
+                                <li>3 classes - 1 hour each</li>
+                                <li>Starting at €29.99</li>
+                            </ul>
+                            <button class="bookbutton" type="button"> Book Now </button>
+                        </div>
+                        <div id = "deal2">
+                            <ul>
+                                <li>10 classes - 1 hour each</li>
+                                <li>Starting at €69.99</li>
+                            </ul>
+                            <button class="bookbutton" type="button"> Book Now </button>
+                        </div>
                     </div>
                 </div>
                 <div class="expand">
                     <button type="button" class="collapsible" id="quick_view">Quick View Venue Details</button>
                     <div class="content">
-                        <div class="timetable">
+                        <div class="listing-description">
+                            <div class = "content-label">Introducing</div>
+                            <div class = "content-title">Silent Gardens</div>
+                            <div class = "content-intro">
+                                <p>Love is a great healer, a harmonizer that can bring genuine joy to our relationships and great peace, meaning and happiness to our lives. However, is it possible to remain open-hearted and loving in the face of difficult people, betrayal and hurt? Thankfully the answer is, Yes!<br><br>
+                                    In this series, we will explore the innate potential for deep and authentic love, inner peace and happiness that exists within each and every one of us. We will discover how meditation can enable us to develop confidence in, and fully actualise this potential for love. We will explore how learning to maintain genuine love in our heart at all times, in all situations, will encourage us to overcome any tendencies we may have for living defensively, and learn how to let go of unhelpful feelings of hurt, anger or resentment. Indeed, as we will see, our wounds and past difficulties in relationships, can serve as the springboard for our own personal growth and development.</p>
+                            </div>
+                            <div class = "content-subtitle">
+                                    <svg class="collapsible-icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10-10-4.5-10-10 4.5-10 10-10zm0-2c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6.2 8.9-1.4-1.4-6.1 6.2-3.1-2.9-1.4 1.4 4.5 4.3 7.5-7.6z"/>
+                                    </svg>         
+                                  Timetable
+                            </div>
+                            <div class="timetable">
+                                <ul>
+                                    <li><p>Monday</p></li>
+                                    <li><p>Tuesday</p></li>
+                                    <li><p>Wednesday</p></li>
+                                    <li><p>Thursday</p></li>
+                                    <li><p>Friday</p></li>
+                                    <li><p>Saturday </p></li>
+                                    <li><p>Sunday</p></li>
+                                </ul>
+                                <ul>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>12:00 - 16:00 </p></li>
+                                    <li><p>12:00 - 16:00 </p></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="content-subtitle">
+                                <svg class="collapsible-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <path d="M12,0C7.8,0,4,3.4,4,7.6c0,4.2,3.5,9.2,8,16.4c4.5-7.2,8-12.2,8-16.4C20,3.4,16.2,0,12,0z M12,11c-1.7,0-3-1.3-3-3 s1.3-3,3-3s3,1.3,3,3S13.7,11,12,11z"/>
+                                </svg>
+                                Location
+                            </div>
                             <ul>
-                                <li><p>Monday</p></li>
-                                <li><p>Tuesday</p></li>
-                                <li><p>Wednesday</p></li>
-                                <li><p>Thursday</p></li>
-                                <li><p>Friday</p></li>
-                                <li><p>Saturday </p></li>
-                                <li><p>Sunday</p></li>
+                                <li>Dublin, Ireland</li>
                             </ul>
-                            <ul>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>12:00 - 16:00 </p></li>
-                                <li><p>12:00 - 16:00 </p></li>
-                            </ul>
-                        </div>
-                         <div class="details">
-                            <p>Love is a great healer, a harmonizer that can bring genuine joy to our relationships and great peace, meaning and happiness to our lives. However, is it possible to remain open-hearted and loving in the face of difficult people, betrayal and hurt? Thankfully the answer is, Yes!<br><br>
+                            <div class="content-map">
+                                <div class="retreatmap" id = "hubmap1"></div>
+                            </div>
 
-                            In this series, we will explore the innate potential for deep and authentic love, inner peace and happiness that exists within each and every one of us. We will discover how meditation can enable us to develop confidence in, and fully actualise this potential for love. We will explore how learning to maintain genuine love in our heart at all times, in all situations, will encourage us to overcome any tendencies we may have for living defensively, and learn how to let go of unhelpful feelings of hurt, anger or resentment. Indeed, as we will see, our wounds and past difficulties in relationships, can serve as the springboard for our own personal growth and development.</p>
+
                         </div>
-                        <div class="info_button">
-                            <a href="http://www.google.com"><button type="button">Go to Venue</button></a>
+
+                        <div class = "collapse-option">                       
+                            <svg class="collapse-icon" enable-background="new 0 0 612 612" viewBox="0 0 612 612" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m604.5 440.5-279.1-305.5c-5.3-5.4-12.4-7.6-19.4-7.3-7-0.4-14.1 1.9-19.4 7.3l-279.1 305.5c-10 10-10 26.3 0 36.3s26.2 10 36.2 0l262.3-287.1 262.3 287.2c10 10 26.2 10 36.2 0 10-10.1 10-26.4 0-36.4z"/>
+                            </svg>
+                            <div class="collapse-text">Collapse</div>                
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
-            <div class="card">
+            <div class="card" id="lol">
                 <div class="card_displayed">
-                    <div class="carousel">
-                        <div class="mySlides2">
-                            <img src="images/meditation/meditation21.jpg" style="width:100%">
-                        </div>
+                    <div class = "card_displayed_main">
+                        <div class="carousel">
+                                <div class="mySlides2 fade">
+                                    <img src="images/meditation/meditation21.jpg" style="width:100%">
+                                </div>
+            
+                                <div class="mySlides2 fade">
+                                    <img src="images/meditation/meditation22.jpg" style="width:100%">
+                                </div>
+            
+                                <div class="mySlides2 fade">
+                                    <img src="images/meditation/meditation23.jpg" style="width:100%">
+                                </div>
 
-                        <div class="mySlides2">
-                            <img src="images/meditation/meditation22.jpg" style="width:100%">
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                         </div>
-
-                        <div class="mySlides2">
-                            <img src="images/meditation/meditation23.jpg" style="width:100%">
+                        <div class="info">
+                            <input type="hidden" name="" value="pdublin ireland silent gardens"> <!-- KEYWORDS IN HERE!! -->
+                            <div class = 'retreat-title'>Country Falls</div>
+                            <div class = 'retreat-location'>
+                                    <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                        <path d="M12,0C7.8,0,4,3.4,4,7.6c0,4.2,3.5,9.2,8,16.4c4.5-7.2,8-12.2,8-16.4C20,3.4,16.2,0,12,0z M12,11c-1.7,0-3-1.3-3-3 s1.3-3,3-3s3,1.3,3,3S13.7,11,12,11z"/>
+                                </svg> Cork, Ireland
+                            </div>
+                            <div class = 'rating-container'>
+                                <div class="stars" style="--rating: 4.5;"></div>
+                                <div id="rating"> (4.5/5)</div>
+                            </div>
+                            <div class = 'retreat-content'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tincidunt ultrices.</p>
+                            </div>
                         </div>
-
-                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                    </div>
-                    <div class="info">
-                        <input type="hidden" name="" value="cork ireland country falls"> <!-- keywords in here -->
-                        <p>Country Falls</p>
-                        <p style="font-size:24px">Cork, Ireland</p>
-                        <p id="rating">Rating: 4.5/5</p>
-                        <p class="stars" style="--rating: 4.5;"></p>
-                    </div>
-                    <div class="maps">
-                        <iframe width="400px" height="90%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EhpQZWFyc2UgU3QsIER1YmxpbiwgSXJlbGFuZCIuKiwKFAoSCXn6nJGRDmdIEdH_Ais8rtBxEhQKEgkvrCfqgA5nSBGgcTGXqccACg&key=AIzaSyDYJvTx8LQe_DBM-Avw0wC_98ArpWhvnGA" allowfullscreen></iframe>
                     </div>
                     <div class="deals">
-                        <ul id="deal1">
-                            <li>3 classes - 1 hour each</li>
-                            <li>Starting at €29.99</li>
-                        </ul>
-                        <ul id="deal2">
-                            <li>10 classes - 1 hour each</li>
-                            <li>Starting at €69.99</li>
-                        </ul>
+                        <div id = "deal1">
+                            <ul>
+                                <li>3 classes - 1 hour each</li>
+                                <li>Starting at €29.99</li>
+                            </ul>
+                            <button class="bookbutton" type="button"> Book Now </button>
+                        </div>
+                        <div id = "deal2">
+                            <ul>
+                                <li>10 classes - 1 hour each</li>
+                                <li>Starting at €69.99</li>
+                            </ul>
+                            <button class="bookbutton" type="button"> Book Now </button>
+                        </div>
                     </div>
                 </div>
                 <div class="expand">
                     <button type="button" class="collapsible" id="quick_view">Quick View Venue Details</button>
                     <div class="content">
-                        <div class="timetable">
-                            <ul>
-                                <li><p>Monday</p></li>
-                                <li><p>Tuesday</p></li>
-                                <li><p>Wednesday</p></li>
-                                <li><p>Thursday</p></li>
-                                <li><p>Friday</p></li>
-                                <li><p>Saturday </p></li>
-                                <li><p>Sunday</p></li>
-                            </ul>
-                            <ul>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>09:00 - 17:00 </p></li>
-                                <li><p>12:00 - 16:00 </p></li>
-                                <li><p>12:00 - 16:00 </p></li>
-                            </ul>
-                        </div>
-                         <div class="details">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tincidunt ultrices. Praesent vel tristique dui. Sed luctus nunc quis sem mollis, semper luctus nisi lobortis. In hac habitasse platea dictumst. Duis venenatis est leo, at porta justo vestibulum sit amet. Nunc ac fringilla diam. Aenean sollicitudin at urna et varius. Mauris vel erat sit amet libero dictum fermentum sed id erat. Fusce porta erat eget magna maximus, vehicula efficitur risus auctor. Mauris non dictum urna, non dignissim mauris. Suspendisse et diam ut orci porta fringilla vitae id lectus. Suspendisse potenti. Mauris condimentum eros sit amet vehicula suscipit. Sed commodo eget purus nec tincidunt. In tempus imperdiet ligula et suscipit. Fusce in risus mattis velit accumsan aliquet.
+                        <div class="listing-description">
+                            <div class = "content-label">Introducing</div>
+                            <div class = "content-title">Country Falls</div>
+                            <div class = "content-intro">
+                                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus tincidunt ultrices. Praesent vel tristique dui. Sed luctus nunc quis sem mollis, semper luctus nisi lobortis. In hac habitasse platea dictumst. Duis venenatis est leo, at porta justo vestibulum sit amet. Nunc ac fringilla diam. Aenean sollicitudin at urna et varius. Mauris vel erat sit amet libero dictum fermentum sed id erat. Fusce porta erat eget magna maximus, vehicula efficitur risus auctor. Mauris non dictum urna, non dignissim mauris. Suspendisse et diam ut orci porta fringilla vitae id lectus. Suspendisse potenti. Mauris condimentum eros sit amet vehicula suscipit. Sed commodo eget purus nec tincidunt. In tempus imperdiet ligula et suscipit. Fusce in risus mattis velit accumsan aliquet.
 
-                            Proin id ante non libero accumsan dapibus eget in magna. Nunc vestibulum purus lectus. Duis auctor eget orci quis blandit. Fusce consectetur viverra erat. Sed lectus metus, semper eu lorem eget, faucibus venenatis nibh. Nullam vehicula cursus nunc finibus commodo. Maecenas vehicula aliquet ligula at convallis. Nulla tempor elit quis est imperdiet viverra. Sed vehicula vitae odio id posuere. Vestibulum varius lectus eget diam tincidunt, et suscipit neque tristique. Praesent et vehicula sapien. Etiam eleifend, felis nec venenatis feugiat, nulla ante facilisis lectus, sit amet dictum ligula sapien auctor libero.</p>
+                                    Proin id ante non libero accumsan dapibus eget in magna. Nunc vestibulum purus lectus. Duis auctor eget orci quis blandit. Fusce consectetur viverra erat. Sed lectus metus, semper eu lorem eget, faucibus venenatis nibh. Nullam vehicula cursus nunc finibus commodo. Maecenas vehicula aliquet ligula at convallis. Nulla tempor elit quis est imperdiet viverra. Sed vehicula vitae odio id posuere. Vestibulum varius lectus eget diam tincidunt, et suscipit neque tristique. Praesent et vehicula sapien. Etiam eleifend, felis nec venenatis feugiat, nulla ante facilisis lectus, sit amet dictum ligula sapien auctor libero.</p>
+                            </div>
+                            <div class = "content-subtitle">
+                                    <svg class="collapsible-icon" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10-10-4.5-10-10 4.5-10 10-10zm0-2c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12-5.4-12-12-12zm6.2 8.9-1.4-1.4-6.1 6.2-3.1-2.9-1.4 1.4 4.5 4.3 7.5-7.6z"/>
+                                    </svg>         
+                                  Timetable
+                            </div>
+                            <div class="timetable">
+                                <ul>
+                                    <li><p>Monday</p></li>
+                                    <li><p>Tuesday</p></li>
+                                    <li><p>Wednesday</p></li>
+                                    <li><p>Thursday</p></li>
+                                    <li><p>Friday</p></li>
+                                    <li><p>Saturday </p></li>
+                                    <li><p>Sunday</p></li>
+                                </ul>
+                                <ul>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>09:00 - 17:00 </p></li>
+                                    <li><p>12:00 - 16:00 </p></li>
+                                    <li><p>12:00 - 16:00 </p></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="content-subtitle">
+                                <svg class="collapsible-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                    <path d="M12,0C7.8,0,4,3.4,4,7.6c0,4.2,3.5,9.2,8,16.4c4.5-7.2,8-12.2,8-16.4C20,3.4,16.2,0,12,0z M12,11c-1.7,0-3-1.3-3-3 s1.3-3,3-3s3,1.3,3,3S13.7,11,12,11z"/>
+                                </svg>
+                                Location
+                            </div>
+                            <ul>
+                                <li>Cork, Ireland</li>
+                            </ul>
+                            <div class="content-map">
+                                <div class="retreatmap" id = "hubmap2"></div>
+                            </div>
+
+
                         </div>
-                        <div class="info_button">
-                            <a href="http://www.google.com"><button type="button">Go to Venue</button></a>
+
+                        <div class = "collapse-option">                       
+                            <svg class="collapse-icon" enable-background="new 0 0 612 612" viewBox="0 0 612 612" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m604.5 440.5-279.1-305.5c-5.3-5.4-12.4-7.6-19.4-7.3-7-0.4-14.1 1.9-19.4 7.3l-279.1 305.5c-10 10-10 26.3 0 36.3s26.2 10 36.2 0l262.3-287.1 262.3 287.2c10 10 26.2 10 36.2 0 10-10.1 10-26.4 0-36.4z"/>
+                            </svg>
+                            <div class="collapse-text">Collapse</div>                
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 
@@ -234,6 +325,8 @@
             </ul>
         </div>
     </footer>
-    <script src="./js/medi-yoga-script.js"></script>
+    <script src="./js/yoga-meditation-retreats-script.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCASrjvTxtSFwnA6jGZbKYQAA4MvpwqcFc&callback=retreatMap"></script>
+
 </body>
 </html>
