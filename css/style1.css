@@ -197,11 +197,14 @@ padding:10%;
         /*********/
 
 /*Index-products*/
+article{
+    background-color: #f7f7f7;
+}
 .products{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    margin-top:10%;
+    margin-top:5%;
     margin-bottom:10%;
 }
 @media screen and (max-width: 768px) {  
@@ -213,6 +216,13 @@ padding:10%;
     .prd-dscr-btn{
         width: 100%;
     }
+}
+.products-text{
+    align-content: center;
+    padding-top:10%;
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom:0;
 }
 .product-1 {
     padding: 5%;
@@ -276,11 +286,12 @@ padding:10%;
 
 /*Style for counter*/
 .middle{
-    /*position: absolute;*/
+    position: relative;
     /*top: 50%;*/
     width: 100%;
     transform: translateY(-50%);
-    margin-top:25%;
+    margin-top:20%;
+    background-color: #f7f7f7;
   }
   .counting-sec{
     padding: 40px 0;
@@ -310,6 +321,8 @@ padding:10%;
 
 /*End of style for counter*/
 
+
+
 /* Banner Advertisment list your business*/
 .banneradds{
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/yogabanner1.jpg');
@@ -323,7 +336,6 @@ padding:10%;
 .pbanner{
     font-size: 25pt;
     font-weight: bold;
-    margin-top:15%;
 }
 
 .bannerbutton{
