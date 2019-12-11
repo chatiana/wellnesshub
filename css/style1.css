@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 .header{
     display: flex;
@@ -93,11 +94,10 @@ footer img{
     width: 80px;
     height: 90px;
 }
-.footer-col1 {
-    /*margin: 40px;*/
-}
+
 .social-media i{
     padding:10px;
+    color:#A0D9BE;
 }
 .footer-col2 {
     margin: 50px;
@@ -197,7 +197,7 @@ padding:10%;
         /*********/
 
 /*Index-products*/
-article{
+.products-wrapper{
     background-color: #f7f7f7;
 }
 .products{
@@ -205,7 +205,7 @@ article{
     flex-direction: row;
     justify-content: center;
     margin-top:5%;
-    margin-bottom:10%;
+    background-color: #f7f7f7;
 }
 @media screen and (max-width: 768px) {  
     .products{
@@ -215,6 +215,12 @@ article{
     }
     .prd-dscr-btn{
         width: 100%;
+    }
+}
+@media screen and (max-width: 768px) { 
+    .products-text{
+        font-size: 15pt;
+
     }
 }
 .products-text{
@@ -290,8 +296,8 @@ article{
     /*top: 50%;*/
     width: 100%;
     transform: translateY(-50%);
-    margin-top:20%;
     background-color: #f7f7f7;
+    margin-top:15%;
   }
   .counting-sec{
     padding: 40px 0;
@@ -302,6 +308,15 @@ article{
     max-width: 1200px;
     margin: auto;
     display: flex;
+  }
+  @media screen and (max-width: 768px) { 
+      .middle{
+        margin-top:70%;
+      }
+    .inner-width{
+        display: flex;
+        flex-direction: column;
+    }
   }
   .col{
     flex: 1;
