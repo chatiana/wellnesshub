@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 .header{
     display: flex;
@@ -31,16 +32,26 @@ header button{
 }
 .headbutton1{
     background-color: whitesmoke;
-    border: 2px solid #11698c;
+    border: 2px solid #2999A6;
     color: #2999A6;
 }
-.headbutton2{
+.headbutton1:hover{
     background-color: #11698c;
-    border-color: #11698c;
-    color: #A0D9BE;
-    padding: 10px 30px;
+    border-color:  #11698c;
+    color: whitesmoke;
 }
 
+.headbutton2{
+    background-color: #2999A6;
+    border-color: #2999A6;
+    color: whitesmoke;
+    padding: 10px 30px;
+}
+.headbutton2:hover{
+    background-color: #11698c;
+    border-color:  #11698c;
+    color: whitesmoke;
+}
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -58,11 +69,8 @@ nav a:hover {
 .main1 img{
     width: 100%;
 }
-.banneradds{
-    background-image: url('../images/yogasun.jpg');
-    width: 100%;
-    height: 400px; 
-}
+
+/* Start of FOOTER*/
 
 footer{
     background-color: #16778c;
@@ -84,10 +92,12 @@ footer a:hover{
 
 footer img{
     width: 80px;
-    height: 80px;
+    height: 90px;
 }
-.footer-col1 {
-    margin: 50px;
+
+.social-media i{
+    padding:10px;
+    color:#A0D9BE;
 }
 .footer-col2 {
     margin: 50px;
@@ -98,6 +108,25 @@ footer img{
 .footer-col4 {
     margin: 50px;
 }
+.bottom-credits{
+    background-color: #16778c;
+    text-align: center;
+}
+hr{
+    border-top: 0.5px solid #f1f1f1;
+    display: block;
+    margin-top:0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.p-bottom{
+    background-color: #16778c;
+    color: #f1f1f1;
+    margin-bottom: 0;
+}
+
+/* End of FOOTER*/
+
 /* Hero Banner*/
 .hero-wrapper{
     display: flex;
@@ -168,12 +197,15 @@ padding:10%;
         /*********/
 
 /*Index-products*/
+.products-wrapper{
+    background-color: #f7f7f7;
+}
 .products{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    margin-top:10%;
-    margin-bottom:10%;
+    margin-top:5%;
+    background-color: #f7f7f7;
 }
 @media screen and (max-width: 768px) {  
     .products{
@@ -184,6 +216,19 @@ padding:10%;
     .prd-dscr-btn{
         width: 100%;
     }
+}
+@media screen and (max-width: 768px) { 
+    .products-text{
+        font-size: 15pt;
+
+    }
+}
+.products-text{
+    align-content: center;
+    padding-top:10%;
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom:0;
 }
 .product-1 {
     padding: 5%;
@@ -244,6 +289,89 @@ padding:10%;
       color: #f1f1f1;
   }
 /*End of Index-products*/
+
+/*Style for counter*/
+.middle{
+    position: relative;
+    /*top: 50%;*/
+    width: 100%;
+    transform: translateY(-50%);
+    background-color: #f7f7f7;
+    margin-top:15%;
+  }
+  .counting-sec{
+    padding: 40px 0;
+    width: 100%;
+    background: linear-gradient(90deg,#11698c,#82ccdd);
+  }
+  .inner-width{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+  @media screen and (max-width: 768px) { 
+      .middle{
+        margin-top:70%;
+      }
+    .inner-width{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .col{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .col i{
+    font-size: 40px;
+    color: orange;
+  }
+  .num{
+    font-size: 40px;
+    margin: 20px 0;
+  }
+
+/*End of style for counter*/
+
+
+
+/* Banner Advertisment list your business*/
+.banneradds{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/yogabanner1.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 400px; 
+    text-align: center;
+    margin:0;
+}
+.pbanner{
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.bannerbutton{
+    background-color: orange;
+    color:white;
+    align-content: center;
+    border: 2px solid orange;
+    cursor: pointer;
+    border-radius:16px ;
+    padding: 10px 30px;
+    margin-top:10%;
+}
+
+.bannerbutton:hover{
+    background-color: #ff5e00;
+    border: 2px solid #ff5e00;
+    color:whitesmoke;
+}
+/* END of Banner Advertisment list your business*/
+
+
 
 
 /* FOR CONTACT PAGE - BY WILMIR */
