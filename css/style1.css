@@ -17,6 +17,11 @@ body{
 .top-right a:hover{
     color: rgb(235, 140, 106);
 }
+@media screen and (max-width: 768px) { 
+    .top-right{
+        display: none;
+    }
+}
 header img{
     width: 120px;
     height: 120px;
@@ -69,7 +74,18 @@ nav a:hover {
 .main1 img{
     width: 100%;
 }
+@media screen and (max-width: 768px) { 
+    nav{
+        display: none;
+    }
+}
 
+
+/*Start of Responsive Nav Bar*/
+.respo-nav{
+    color: #16778c;
+    font-size: x-large;
+}
 /* Start of FOOTER*/
 
 footer{
