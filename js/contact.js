@@ -35,7 +35,10 @@
     
             props = {
                 center:new google.maps.LatLng(loc.lat,loc.long),
-                zoom:15,
+                zoom:10,
+                options: {
+                    gestureHandling: 'greedy'
+                },
                 mapTypeControl:false,
                 streetViewControl:false,
                 fullscreenControl:false,

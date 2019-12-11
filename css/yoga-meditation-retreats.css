@@ -265,8 +265,8 @@ li .price {
 /*Styling collapsible*/
 
 .collapsible {
-	background-color: #a9a9a9;
-	color:white;
+	background-color: #e9ebee;
+	color:gray;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
@@ -278,13 +278,14 @@ li .price {
 }
 
 .collapsible:hover {
-	background-color: #606060;
+	background-color: white;
 	transition: ease 0.3s;
+	color:#16778C;
 }
 
 
 .active{
-	background-color: #a9a9a9;
+	background-color: white;
 	border-radius:0;
 }
 
@@ -301,14 +302,14 @@ li .price {
 .collapsible::after {
   content: "\271A"; /* Unicode character for "plus" sign (+) */
   font-size: 14px;
-  color: white; 
+  color: gray; 
   float: right;
   margin-left: 5px;
 }
 
 .active::after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-  color: white; 
+  content: "Collapse  \2796"; /* Unicode character for "minus" sign (-) */
+  color: gray; 
 }
 
 .collapse-option {
@@ -368,12 +369,35 @@ li .price {
 	font-weight: 600;
 }
 
+.timetable {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-area: "day time";
+}
+
+.timetable p {
+	font-size: 14px;
+}
+
+.timetable ul {
+	list-style-type: none;
+}
+
+
+
+
+
 /*Styles the maps*/
 .retreatmap{
 	width:100%;
 	height:300px;
 	border-radius: 6px;
 }
+
+
+
+
+
 
 
 /*Media Query*/
@@ -389,6 +413,16 @@ li .price {
 #deal1, #deal2{
 	flex-direction: column;
 }
+
+
+.search{
+	padding: 0 30px;
+}
+
+#searchbar {
+	width: 100%;
+}
+
 
 .bookbutton{
 	padding: 10px;
