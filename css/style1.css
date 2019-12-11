@@ -31,16 +31,26 @@ header button{
 }
 .headbutton1{
     background-color: whitesmoke;
-    border: 2px solid #11698c;
+    border: 2px solid #2999A6;
     color: #2999A6;
 }
-.headbutton2{
+.headbutton1:hover{
     background-color: #11698c;
-    border-color: #11698c;
-    color: #A0D9BE;
-    padding: 10px 30px;
+    border-color:  #11698c;
+    color: whitesmoke;
 }
 
+.headbutton2{
+    background-color: #2999A6;
+    border-color: #2999A6;
+    color: whitesmoke;
+    padding: 10px 30px;
+}
+.headbutton2:hover{
+    background-color: #11698c;
+    border-color:  #11698c;
+    color: whitesmoke;
+}
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -105,6 +115,7 @@ hr{
     margin-top:0;
     margin-left: 5%;
     margin-right: 5%;
+    color:red;
 }
 .p-bottom{
     background-color: #16778c;
@@ -302,6 +313,7 @@ padding:10%;
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/yogabanner1.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
+    position: absolute;
     width: 100%;
     height: 400px; 
     text-align: center;
