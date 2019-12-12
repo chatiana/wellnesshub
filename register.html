@@ -15,29 +15,40 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
         <!-- Font-awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!--Favicon-->
+        <link rel="icon" type="image/png"  href="images/faviconweb_icon.ico">
+
 </head>
 
 <body>
     <!-- Logo + Buttons-->
     <header class="header">
-        <div class="logo">
-        <a href="index.html" class="logo"><img src="images/logoweb.png"></a>
-        </div> 
+        <div class="top-left">
+            <div class="logo">
+            <a href="index.html" class="logo"><img src="images/logoweb.png" id="header-logo" alt="logo"></a>
+            </div> 
+            <div class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+            </div>
+        </div>
         <div class="top-right">
             <h4><a href="listbusiness.html"> List your business</a></h4>
             <button class="headbutton1" type="button" onclick="location.href='register.html'">Register</button>
             <button id="headerLoginButton" class="headbutton2" type="button"> Login </button>
         </div>
-    
     </header>
+
+
     <!-- Menu Bar -->
-    <nav>
+    <div class="navbar">
+    <nav class="main-nav" id="js-menu">
         <a href="yoga.html">YOGA</a> 
         <a href="meditation.html">MEDITATION</a> 
         <a href="retreats.html">RETREATS</a> 
         <a href="contactus.html">CONTACT US</a>
     </nav>
-
+    </div>
     <div class="register">
         <div class="register-card">
             <form id="registerForm" class="register-form" method="POST">
@@ -92,6 +103,7 @@
     </footer>
      <!--The End of the footer-->
     <script src="./js/index.js"></script>
+    <script src="./js/toggle.js"></script>
     <script>
     const registerForm = document.querySelector("#registerForm");
     registerForm.addEventListener(
@@ -102,5 +114,6 @@
         },
     );
     </script>
+
 </body>
 </html>

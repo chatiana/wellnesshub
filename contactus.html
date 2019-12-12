@@ -5,7 +5,6 @@
     <meta name="author" content="Group H">
     <meta name="description" content="WellnessHub">
     <meta name="keywords" content="wellness, yoga, meditation, retreats ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WellnessHub</title>
         <!-- css Stylesheets -->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -15,28 +14,39 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
         <!-- Font-awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!--Favicon-->
+        <link rel="icon" type="image/png"  href="images/faviconweb_icon.ico">
 </head>
 
 <body>
     <!-- Logo + Buttons-->
     <header class="header">
-        <div class="logo">
-        <a href="index.html" class="logo"><img src="images/logoweb.png"></a>
-        </div> 
-        <div class="top-right">
-            <h4><a href="listbusiness.html"> List your business</a></h4>
-            <button class="headbutton1" type="button" onclick="location.href='register.html'">Register</button>
-            <button id="headerLoginButton" class="headbutton2" type="button"> Login </button>
-        </div>
+            <div class="top-left">
+                <div class="logo">
+                <a href="index.html" class="logo"><img src="images/logoweb.png" id="header-logo" alt="logo"></a>
+                </div> 
+                <div class="navbar-toggle" id="js-navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="top-right">
+                <h4><a href="listbusiness.html"> List your business</a></h4>
+                <button class="headbutton1" type="button" onclick="location.href='register.html'">Register</button>
+                <button id="headerLoginButton" class="headbutton2" type="button"> Login </button>
+            </div>
+        </header>
     
-    </header>
-    <!-- Menu Bar -->
-    <nav>
-        <a href="yoga.html">YOGA</a> 
-        <a href="meditation.html">MEDITATION</a> 
-        <a href="retreats.html">RETREATS</a> 
-        <a href="contactus.html">CONTACT US</a>
-    </nav>
+    
+        <!-- Menu Bar -->
+        <div class="navbar">
+        <nav class="main-nav" id="js-menu">
+            <a href="yoga.html">YOGA</a> 
+            <a href="meditation.html">MEDITATION</a> 
+            <a href="retreats.html">RETREATS</a> 
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+        </div>
     <!-- Contact Section -->
     <div class = "contact">
         <div class = "contact-content">
@@ -201,6 +211,7 @@
             <p class="p-bottom">&copy; wellnesshub.com | 2019</p>
         </div>
     <script src="./js/index.js"></script>
+    <script src="./js/toggle.js"></script>
     <script src ="./js/contact.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCASrjvTxtSFwnA6jGZbKYQAA4MvpwqcFc&callback=contactMap"></script>
 
