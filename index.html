@@ -58,8 +58,12 @@
                     <!--search box-->
                     <div class="hero-banner-sec1">
                         <div class="box-container">
+                                <button class="tablink" onclick="openService('Yoga', this, '#2999A6')" id="defaultOpen">Yoga</button>
+                                <button class="tablink" onclick="openService('Meditation', this, '#16778C')">Meditation</button>
+                                <button class="tablink" onclick="openService('Retreats', this, '#1db9c4')">Retreats</button>  
+
                                 <div id="Yoga" class="tabcontent">
-                                        <h1>YOGA</h1>
+                                        <h1></h1>
                                         <p>Select a date:</p>
                                         <input type="date" name="date">
                                         <p>Pick a Location</p>
@@ -73,8 +77,8 @@
                                         <input type="submit" value= "Search WellnessHub">
                                       </div>
                                       
-                                      <div id="Meditation" class="tabcontent">
-                                        <h1>MEDITATION</h1>
+                                <div id="Meditation" class="tabcontent">
+                                        <h1></h1>
                                         <p>Select a date:</p>
                                         <select id="sortby">
                                             <option value="priceUp">Price Low -> High</option>
@@ -84,16 +88,12 @@
                                         <input type="submit" value= "Search WellnessHub">
                                       </div>
                                       
-                                      <div id="Retreats" class="tabcontent">
-                                        <h1>RETREATS</h1>
+                                <div id="Retreats" class="tabcontent">
+                                        <h1></h1>
                                         <p>Select a date:</p>
                                         <input type="date" name="date">
                                         <input type="submit" value= "Search WellnessHub">
-                                      </div>
-                                      
-                                      <button class="tablink" onclick="openService('Yoga', this, '#A0D9BE')" id="defaultOpen">Yoga</button>
-                                      <button class="tablink" onclick="openService('Meditation', this, '#2999A6')">Meditation</button>
-                                      <button class="tablink" onclick="openService('Retreats', this, '#16778C')">Retreats</button>          
+                                      </div>        
                                       
                         </div>
                     </div>
