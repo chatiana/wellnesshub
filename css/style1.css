@@ -551,11 +551,11 @@ label {
 /*Styles the submit button*/
 #form-submit{
     float: right;
-    width: 80px;
+    width: 100%;
     background-color: #11698c;
     border-color: #11698c;
     color:white;
-    padding: 12px;
+    border-radius:16px ;
     text-align: center;
     font-weight: bolder;
     box-sizing: border-box;
@@ -686,8 +686,8 @@ label {
 .list-business-button{
     background-color: orange;
     border-color:orange;
-    border-radius: 4px;
     color:white;
+    border-radius:16px ;
     padding: 10px 30px;
     box-sizing: border-box;
     font-weight: bolder;
