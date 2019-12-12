@@ -36,7 +36,6 @@ header button{
     text-decoration: none;
     cursor: pointer;
     border-radius: 16px;
-    border-style: solid 1px;
 }
 .headbutton1{
     background-color: whitesmoke;
@@ -352,7 +351,6 @@ hr{
     text-decoration: none;
     cursor: pointer;
     border-radius: 16px;
-    border-style: solid 1px;
     padding: 10px 20px;
   }
   .prd-dscr-btn:hover{
@@ -664,8 +662,7 @@ label {
 		background-size: auto auto;
 		background-clip: border-box;
 		background-size: 200% auto;
-		background-clip: text;
-		text-fill-color: transparent;
+		background-clip: border-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
         animation: textclip 10s linear infinite;
