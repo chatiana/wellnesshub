@@ -609,6 +609,10 @@ label {
 
 /*Styles the list business section*/
 .list-business-banner{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/yogabanner1.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
     background-color: #ededed;
     display:flex;
     flex-direction: row;
@@ -620,9 +624,12 @@ label {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 768px;
     margin: 50px 0 30px 0;
     box-sizing: border-box;
+   /* background: rgba(255, 255, 255, 0.4); */
+    padding: 20px;
+    border-radius: 6px;
 }
 
 /*Style the list business title*/
@@ -642,6 +649,33 @@ label {
     box-sizing: border-box;
 }
 
+/*Banner text rainbow animation effect*/
+/* Add shining class to the text you need to apply this to. */
+.shining {
+	text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+       /* background: linear-gradient(to right, #11698c 10%, black 50%, #11698c 60%);*/
+        background: linear-gradient(-90deg,#2999A6,indigo,violet, #ff007f,orange, #00b300);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+        animation: textclip 10s linear infinite;
+    }
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+/*End of Banner text rainbow animation effect*/
+
+
+
 /*Styles the layout for the button container*/
 .list-business-button-container{
     align-self: center;
@@ -650,8 +684,8 @@ label {
 }
 
 .list-business-button{
-    background-color: black;
-    border-color:black;
+    background-color: orange;
+    border-color:orange;
     border-radius: 4px;
     color:white;
     padding: 15px;
@@ -660,8 +694,8 @@ label {
 }
 
 .list-business-button:hover{
-    background-color: #11698c;
-    border-color: #11698c;
+    background-color: #ff5e00;
+    border-color: #ff5e00;
     transition: ease 0.5s;
 }
 
@@ -766,7 +800,8 @@ label {
     }
 
     .list-business-container{
-        width: 70%;
+        width: 90%;
+        background: rgba(255, 255, 255, 0.4);
     }
 
     .instagram_icon, 
