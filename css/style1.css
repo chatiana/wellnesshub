@@ -67,6 +67,7 @@ nav {
     padding: 20px;
     background: #16778C;
   }
+  
 nav a{
     text-decoration: none;
     color: #A0D9BE;
@@ -106,7 +107,7 @@ nav a:hover {
 }
 .main-nav{
     align-items: center;
-    display: none;
+
 }
 header img{
     width: 60px;

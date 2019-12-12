@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Group H">
@@ -22,13 +22,14 @@
         <!--Favicon-->
         <link rel="icon" type="image/png"  href="images/faviconweb_icon.ico">
 
+
 </head>
 
 <body>
     <!-- Logo + Buttons-->
     <header class="header">
         <div class="logo">
-        <a href="index.html" class="logo"><img src="images/logoweb.png"></a>
+        <a href="index.html" class="logo"><img src="images/logoweb.png" alt="logo"></a>
         </div> 
         <div class="top-right">
             <h4><a href="listbusiness.html"> List your business</a></h4>
@@ -51,7 +52,6 @@
 </div>
     <!-- Top Section -->
 
-    <section>
         <div class="main-hero-banner">
             <div class="hero-banner-background">
                 <div class= "hero-wrapper">
@@ -91,7 +91,6 @@
                                       </div>
                                       
                                 <div id="Retreats" class="tabcontent">
-                                        <h1></h1>
                                         <p>Category:</p>
                                         <select class="select-search">
                                                 <option value="blank">Select</option>
@@ -135,7 +134,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    
 
     <!--Start of the PRODUCTS-->
 
@@ -229,7 +228,7 @@
     <!--The Start of the footer-->
     <footer>
         <div class="footer-col1">
-            <a href="index.html" class="logo"><img src="images/logoweb.png"></a>
+            <a href="index.html" class="logo"><img src="images/logoweb.png" alt="logo"></a>
             <div class="social-media">
                 <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
                 <a href="http://instagra.com"><i class="fab fa-instagram"></i></a>
@@ -263,7 +262,7 @@
     </footer>
     <div class="bottom-credits">
         <hr>
-        <p class="p-bottom">&copy wellnesshub.com | 2019</p>
+        <p class="p-bottom">&copy; wellnesshub.com | 2019</p>
     </div>
     
      <!--The End of the footer-->
@@ -294,18 +293,19 @@
     <!--log in & register js-->
     <script src="./js/index.js"></script>
     <!--Counter script-->
-    <script type="text/javascript">
+    <script>
         $(".num").counterUp({delay:10,time:1000});
     </script>
 
     <!--Responsive navbar toggle script-->
-    <script type="text/javascript">
+    <script>
     let mainNav = document.getElementById('js-menu');
     let navBarToggle = document.getElementById('js-navbar-toggle');
     navBarToggle.addEventListener('click', function () {
     mainNav.classList.toggle('active');
 });
     </script>
+
 
 </body>
 </html>
