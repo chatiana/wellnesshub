@@ -6,7 +6,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2%;
     color:#16778C;
     font-weight: lighter;
     align-items: center;
@@ -81,20 +80,26 @@ nav a:hover {
 
 
 /*Start of Responsive Nav Bar*/
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 768px) { 
 
 .main-nav a{
-    padding: 30px;
-    position: static;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #16778c;
     color: #A0D9BE;
+    width: 100%;
+}
+
+.main-nav a:hover{
+    background: #2999A6;
+    transition: ease 0.2s;
+    color: white;
 }
 
 /*hides the navigation bar*/
+
 .main-nav{
     align-items: center;
     display: none;
@@ -103,6 +108,10 @@ nav a:hover {
 
 .active-nav{
     display: flex;
+}
+
+nav{
+    padding: 0;
 }
 
 /*displays the  bar toggle visibility*/
@@ -116,10 +125,9 @@ nav a:hover {
     margin: 0;
 }
 
-
 #header-logo{
-    width: 30px;
-    margin: 0;
+    width: 40px;
+    margin: 0 20px 0 0;
     padding: 10px;
 }
 
@@ -127,7 +135,16 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
+
+.top-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .top-right h4{
     display: none;
@@ -137,14 +154,11 @@ nav a:hover {
     margin-right: 20px;
 }
 
+.headbutton2{
+    margin-right: 20px;
 }
 
-@media screen and (max-width: 375px) { 
-.header{
-    flex-direction: column;
 }
-}
-
 
 
 
