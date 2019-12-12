@@ -14,6 +14,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
         <!-- Font-awesome -->
@@ -37,18 +38,17 @@
     
     </header>
     <!-- Menu Bar -->
-    <nav>
+    <div class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    <nav class="main-nav" id="js-menu">
         <a href="yoga.html">YOGA</a> 
         <a href="meditation.html">MEDITATION</a> 
         <a href="retreats.html">RETREATS</a> 
         <a href="contactus.html">CONTACT US</a>
     </nav>
-
-    <!--Responsive nav bar-->
-    <div class="respo-nav">
-            <i class="fas fa-bars"></i>
-
-    </div>
+</div>
     <!-- Top Section -->
 
     <section>
@@ -297,5 +297,15 @@
     <script type="text/javascript">
         $(".num").counterUp({delay:10,time:1000});
     </script>
+
+    <!--Responsive navbar toggle script-->
+    <script type="text/javascript">
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+});
+    </script>
+
 </body>
 </html>

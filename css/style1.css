@@ -21,6 +21,9 @@ body{
     .top-right{
         display: none;
     }
+    .header{
+        margin-top:0;
+    }
 }
 header img{
     width: 120px;
@@ -74,18 +77,44 @@ nav a:hover {
 .main1 img{
     width: 100%;
 }
+
+/*Start of Responsive Nav Bar*/
+.navbar-toggle{
+    color: #16778c;
+    font-size: x-large;
+    position: absolute;
+    right:20px;
+    top:12%;
+    cursor: pointer;
+    font-size: 20pt;
+}
+.active{
+    display: block;
+}
 @media screen and (max-width: 768px) { 
     nav{
         display: none;
     }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 130px;
+        align-items: center;
+        background-color: #ff5e00;
+    }
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+    }
+    .main-nav a{
+        padding-top: 15px;
+    }
 }
 
 
-/*Start of Responsive Nav Bar*/
-.respo-nav{
-    color: #16778c;
-    font-size: x-large;
-}
+
 /* Start of FOOTER*/
 
 footer{
@@ -219,7 +248,7 @@ hr{
 	border: 3px solid #16778C;
 	border-radius: 10px;
 }
-.tabcontent input[type=submit]{
+.tabcontent button{
     background-color: orange;
     color:white;
     align-content: center;
@@ -228,11 +257,6 @@ hr{
     border-radius:16px ;
     padding: 10px 30px;
     margin-top:10%;
-}
-.tabcontent input[type=submit]:hover{
-    background-color: #ff5e00;
-    border: 2px solid #ff5e00;
-    color:whitesmoke;
 }
 
 
