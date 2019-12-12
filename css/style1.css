@@ -114,6 +114,7 @@ footer img{
 .social-media i{
     padding:10px;
     color:#A0D9BE;
+    cursor: pointer;
 }
 .footer-col2 {
     margin: 50px;
@@ -158,9 +159,12 @@ hr{
 }
 .hero-banner-sec-1{
     padding: 10%;
+    width: 60%;
+    border-radius: 16px;
 }
 .hero-banner-sec2{
-padding:10%;
+    padding:10%;
+    width: 40%;
 }
 .hero-banner-sec2 p{
     font-size: 30pt;
@@ -183,18 +187,24 @@ padding:10%;
   .tablink:hover {
     background-color: #777;
   }
+  .box-container{
+    box-shadow: -10px 15px 7px  rgb(31, 29, 29);
+  }
   
   /* Style the tab content */
   .tabcontent {
     color: white;
     display: none;
     padding: 50px;
-    text-align: center;
+    text-align: left;
+  }
+  .tabcontent p{
+      font-size: 18pt;
   }
   
-  #Yoga {background-color:#A0D9BE;}
-  #Meditation {background-color:#2999A6;}
-  #Retreats{background-color:#16778C;}
+  #Yoga {background-color:#2999A6;  }
+  #Meditation {background-color:#16778C;}
+  #Retreats{background-color:#1db9c4;}
 
 .select-search{
     width: 100%;
@@ -209,6 +219,22 @@ padding:10%;
 	border: 3px solid #16778C;
 	border-radius: 10px;
 }
+.tabcontent input[type=submit]{
+    background-color: orange;
+    color:white;
+    align-content: center;
+    border: 2px solid orange;
+    cursor: pointer;
+    border-radius:16px ;
+    padding: 10px 30px;
+    margin-top:10%;
+}
+.tabcontent input[type=submit]:hover{
+    background-color: #ff5e00;
+    border: 2px solid #ff5e00;
+    color:whitesmoke;
+}
+
 
         /*********/
 
