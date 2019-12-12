@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Group H">
@@ -14,6 +14,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
         <!-- Font-awesome -->
@@ -21,13 +22,14 @@
         <!--Favicon-->
         <link rel="icon" type="image/png"  href="images/faviconweb_icon.ico">
 
+
 </head>
 
 <body>
     <!-- Logo + Buttons-->
     <header class="header">
         <div class="logo">
-        <a href="index.html" class="logo"><img src="images/logoweb.png"></a>
+        <a href="index.html" class="logo"><img src="images/logoweb.png" alt="logo"></a>
         </div> 
         <div class="top-right">
             <h4><a href="listbusiness.html"> List your business</a></h4>
@@ -37,21 +39,19 @@
     
     </header>
     <!-- Menu Bar -->
-    <nav>
+    <div class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    <nav class="main-nav" id="js-menu">
         <a href="yoga.html">YOGA</a> 
         <a href="meditation.html">MEDITATION</a> 
         <a href="retreats.html">RETREATS</a> 
         <a href="contactus.html">CONTACT US</a>
     </nav>
-
-    <!--Responsive nav bar-->
-    <div class="respo-nav">
-            <i class="fas fa-bars"></i>
-
-    </div>
+</div>
     <!-- Top Section -->
 
-    <section>
         <div class="main-hero-banner">
             <div class="hero-banner-background">
                 <div class= "hero-wrapper">
@@ -91,7 +91,6 @@
                                       </div>
                                       
                                 <div id="Retreats" class="tabcontent">
-                                        <h1></h1>
                                         <p>Category:</p>
                                         <select class="select-search">
                                                 <option value="blank">Select</option>
@@ -135,7 +134,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    
 
     <!--Start of the PRODUCTS-->
 
@@ -153,7 +152,7 @@
                 </div>
             </div>
             <div class="prd-dscr">
-               <p >ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex minus quidem odit adipisci omnis,</p>
+               <p>Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India.</p>
                <button class="prd-dscr-btn" type="button" onclick="window.location.href='yoga.html'"> Explore More</button>
             </div>
         </div>
@@ -165,7 +164,7 @@
                 </div>
             </div>
             <div class="prd-dscr">
-                    <p >ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex minus quidem odit adipisci omnis,</p>
+                    <p>Meditation, practice where an individual trains attention and awareness, to achieve a mentally clear and emotionally calm state.</p>
                     <button class="prd-dscr-btn" type="button" onclick="window.location.href='meditation.html'"> Explore More</button>
                  </div>
         </div>
@@ -177,7 +176,7 @@
                 </div>
             </div>
             <div class="prd-dscr">
-                    <p >ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex minus quidem odit adipisci omnis,</p>
+                    <p> If you're keen to realign body and mind, try a retreat. There are all kinds. From addictions, silent to surfing</p>
                     <button class="prd-dscr-btn" type="button" onclick="window.location.href='retreats.html'"> Explore More</button>
                  </div>
         </div>
@@ -229,7 +228,7 @@
     <!--The Start of the footer-->
     <footer>
         <div class="footer-col1">
-            <a href="index.html" class="logo"><img src="images/logoweb.png"></a>
+            <a href="index.html" class="logo"><img src="images/logoweb.png" alt="logo"></a>
             <div class="social-media">
                 <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
                 <a href="http://instagra.com"><i class="fab fa-instagram"></i></a>
@@ -263,7 +262,7 @@
     </footer>
     <div class="bottom-credits">
         <hr>
-        <p class="p-bottom">&copy wellnesshub.com | 2019</p>
+        <p class="p-bottom">&copy; wellnesshub.com | 2019</p>
     </div>
     
      <!--The End of the footer-->
@@ -294,8 +293,19 @@
     <!--log in & register js-->
     <script src="./js/index.js"></script>
     <!--Counter script-->
-    <script type="text/javascript">
+    <script>
         $(".num").counterUp({delay:10,time:1000});
     </script>
+
+    <!--Responsive navbar toggle script-->
+    <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+});
+    </script>
+
+
 </body>
 </html>

@@ -21,6 +21,9 @@ body{
     .top-right{
         display: none;
     }
+    .header{
+        margin-top:0;
+    }
 }
 header img{
     width: 120px;
@@ -33,7 +36,6 @@ header button{
     text-decoration: none;
     cursor: pointer;
     border-radius: 16px;
-    border-style: solid 1px;
 }
 .headbutton1{
     background-color: whitesmoke;
@@ -57,12 +59,14 @@ header button{
     border-color:  #11698c;
     color: whitesmoke;
 }
+/*NAVIGATION BAR Start*/
 nav {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
     background: #16778C;
   }
+  
 nav a{
     text-decoration: none;
     color: #A0D9BE;
@@ -74,18 +78,46 @@ nav a:hover {
 .main1 img{
     width: 100%;
 }
-@media screen and (max-width: 768px) { 
-    nav{
-        display: none;
-    }
-}
-
 
 /*Start of Responsive Nav Bar*/
-.respo-nav{
+.navbar-toggle{
     color: #16778c;
     font-size: x-large;
+    position: absolute;
+    right:20px;
+    top:5%;
+    cursor: pointer;
+    font-size: 20pt;
 }
+.active{
+    display: block;
+}
+@media screen and (max-width: 767px) { 
+
+.main-nav a{
+    padding: 30px;
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #16778c;
+    color: #A0D9BE;
+}
+.main-nav{
+    align-items: center;
+
+}
+header img{
+    width: 60px;
+    height: 90px;
+    margin:0;
+}
+
+}
+
+
+
 /* Start of FOOTER*/
 
 footer{
@@ -219,7 +251,7 @@ hr{
 	border: 3px solid #16778C;
 	border-radius: 10px;
 }
-.tabcontent input[type=submit]{
+.tabcontent button{
     background-color: orange;
     color:white;
     align-content: center;
@@ -228,11 +260,6 @@ hr{
     border-radius:16px ;
     padding: 10px 30px;
     margin-top:10%;
-}
-.tabcontent input[type=submit]:hover{
-    background-color: #ff5e00;
-    border: 2px solid #ff5e00;
-    color:whitesmoke;
 }
 
 
@@ -324,7 +351,6 @@ hr{
     text-decoration: none;
     cursor: pointer;
     border-radius: 16px;
-    border-style: solid 1px;
     padding: 10px 20px;
   }
   .prd-dscr-btn:hover{
@@ -527,11 +553,11 @@ label {
 /*Styles the submit button*/
 #form-submit{
     float: right;
-    width: 80px;
+    width: 100%;
     background-color: #11698c;
     border-color: #11698c;
     color:white;
-    padding: 12px;
+    border-radius:16px ;
     text-align: center;
     font-weight: bolder;
     box-sizing: border-box;
@@ -636,8 +662,7 @@ label {
 		background-size: auto auto;
 		background-clip: border-box;
 		background-size: 200% auto;
-		background-clip: text;
-		text-fill-color: transparent;
+		background-clip: border-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
         animation: textclip 15s linear infinite;
@@ -662,9 +687,9 @@ label {
 .list-business-button{
     background-color: orange;
     border-color:orange;
-    border-radius: 4px;
     color:white;
-    padding: 15px;
+    border-radius:16px ;
+    padding: 10px 30px;
     box-sizing: border-box;
     font-weight: bolder;
 }
