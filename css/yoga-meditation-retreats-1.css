@@ -1,0 +1,436 @@
+/*Main container style*/
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #e9ebee;
+}
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.retreat-container{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 768px;
+}
+
+
+
+/*Search style*/
+.search {
+	margin-top: 1em;
+}
+
+#searchbar {
+	width: 50%;
+	margin-top: 20px;
+	padding: 12px 12px;
+	border: 3px solid #16778C;
+	background-image: url('../images/searchicon.png');
+	background-size: 25px;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	border-radius: 10px;
+	transition: width 1s;
+}
+
+#searchbar:hover {
+	width: 100%;
+}
+
+/*Heading styles*/
+.heading {
+	padding: 5px;
+	margin: 10px 10px 20px 10px;
+}
+
+#heading-title {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#searchResults {
+	font-size: 30px;
+}
+
+
+/*Card Styles*/
+.card {
+	background-color: white;
+    border-radius: 6px;
+	margin-bottom: 2em;
+}
+
+.card_displayed {
+		display: flex;
+		flex-direction: column;
+}
+
+.card_displayed_main {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+}
+
+.carousel {
+	margin: 10px;
+	flex-basis: 50%;
+	position: relative;
+}
+
+.carousel img{
+	width: 100%;
+	border-radius: 2px;
+	max-height: 250px;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .5} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .5} 
+	to {opacity: 1}
+  }
+
+
+/* Hide the images in slides by default */
+.mySlides1, .mySlides2 {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(255,255,255,0.5);
+  }
+
+
+.info {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px 10px 20px;
+} 
+
+
+.retreat-title{
+	font-size: 30px;
+}
+
+.retreat-location{
+	margin: 10px 0;
+	font-size: 12px;
+	color: gray;
+}
+
+.rating-container{
+	display: flex;
+	font-size: 12px;
+	color: gray;
+	align-items: center;
+}
+
+.retreat-content{
+	font-size:14px;
+	display: flex;
+	flex-direction: column;
+	margin:10px 15px 0 0;
+	text-align: justify;
+}
+
+
+.details {
+	padding: 1em;
+}
+
+.timetable ul {
+	list-style-type: none;
+}
+
+.deals ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+
+#deal1 {
+	border-top: 1px solid #E8E8EE;
+	border-bottom: 1px solid #E8E8EE;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+#deal2 {
+	border-bottom: 1px solid #E8E8EE;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+#deal1:hover, #deal2:hover{
+	background-color: #E8E8EE;
+	transition: ease 0.3s;
+}
+
+li .price {
+	color: cadetblue;
+	font-weight: 600;
+}
+
+
+.bookbutton{
+	background-color: #11698c;
+	border-color: #11698c;
+	color: white;
+	margin: 5px 10px 5px 0;	
+	border-radius: 6px;
+}
+
+.bookbutton:hover{
+	background-color:#708090;
+	border-color:#708090;
+	transition: ease 0.3s;
+}
+
+
+
+/*Styling location icon*/
+.location-icon{
+	display: inline;
+	width: 12px;
+    fill:#2999A6;
+}
+
+.stars {
+	--percent: calc(var(--rating) / 5 * 100%);
+	--star-size: 15px;
+	--star-color: #fff;
+	--star-background: #16778C;
+	font-size: var(--star-size);
+}
+
+.stars::before {	
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:root {
+	--star-size: 20px;
+	--star-color: #fff;
+	--star-background: #fc0;
+  }
+  
+
+/*Styling collapsible*/
+
+.collapsible {
+	background-color: #e9ebee;
+	color:gray;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 14px;
+	border-radius:0 0 6px 6px;
+}
+
+.collapsible:hover {
+	background-color: white;
+	transition: ease 0.3s;
+	color:#16778C;
+}
+
+
+.active{
+	background-color: white;
+	border-radius:0;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  line-height: 1.5em;
+  border-radius:0 0 6px 6px;
+}
+
+.collapsible::after {
+  content: "\271A"; /* Unicode character for "plus" sign (+) */
+  font-size: 14px;
+  color: gray; 
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "Collapse  \2796"; /* Unicode character for "minus" sign (-) */
+  color: gray; 
+}
+
+.collapse-option {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.collapse-icon{
+	display: block;
+	margin-top: 5px;
+	width: 14px;
+	fill: gray;
+	stroke: gray;
+	stroke-width: 100;
+}
+
+.collapse-text{
+	font-size: 10px;
+	color: gray;
+}
+
+.collapse-icon:hover, .collapse-text:hover{
+	fill:black;
+	stroke:black;
+	stroke-width: 100;
+	transition: ease-in 0.3s;
+	font-size: 10px;
+	color: black;
+}
+
+
+.content-label{
+	margin-top:10px;
+	font-size:10px;
+	text-transform: uppercase;
+}
+
+.content-title{
+	font-size: 30px;
+}
+
+.content-intro, ul{
+	font-size:14px;
+	margin-bottom: 20px;
+}
+
+.collapsible-icon{
+	display: inline;
+	width: 16px;
+	fill: #16778C;
+}
+
+.content-subtitle{
+	font-size:20px;
+	font-weight: 600;
+}
+
+.timetable {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-area: "day time";
+}
+
+.timetable p {
+	font-size: 14px;
+}
+
+.timetable ul {
+	list-style-type: none;
+}
+
+
+
+
+
+/*Styles the maps*/
+.retreatmap{
+	width:100%;
+	height:300px;
+	border-radius: 6px;
+}
+
+
+
+
+
+
+
+/*Media Query*/
+@media screen and (max-width: 768px) {   
+.card {
+	margin: 10px 15px 2em 15px;
+}
+
+.card_displayed_main {
+	flex-direction: column;
+}
+
+#deal1, #deal2{
+	flex-direction: column;
+}
+
+
+.search{
+	padding: 0 30px;
+}
+
+#searchbar {
+	width: 100%;
+}
+
+
+.bookbutton{
+	padding: 10px;
+}
+
+.carousel img{
+	max-height: none;
+}
+
+
+}
