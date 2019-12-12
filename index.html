@@ -29,27 +29,28 @@
     <!-- Logo + Buttons-->
     <header class="header">
         <div class="logo">
-        <a href="index.html" class="logo"><img src="images/logoweb.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="images/logoweb.png" id="header-logo" alt="logo"></a>
         </div> 
         <div class="top-right">
             <h4><a href="listbusiness.html"> List your business</a></h4>
             <button class="headbutton1" type="button" onclick="location.href='register.html'">Register</button>
             <button id="headerLoginButton" class="headbutton2" type="button"> Login </button>
         </div>
+        <div class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
     
     </header>
     <!-- Menu Bar -->
     <div class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
     <nav class="main-nav" id="js-menu">
         <a href="yoga.html">YOGA</a> 
         <a href="meditation.html">MEDITATION</a> 
         <a href="retreats.html">RETREATS</a> 
         <a href="contactus.html">CONTACT US</a>
     </nav>
-</div>
+    </div>
     <!-- Top Section -->
 
         <div class="main-hero-banner">
@@ -302,7 +303,7 @@
     let mainNav = document.getElementById('js-menu');
     let navBarToggle = document.getElementById('js-navbar-toggle');
     navBarToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('active');
+    mainNav.classList.toggle('active-nav');
 });
     </script>
 

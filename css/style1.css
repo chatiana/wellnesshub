@@ -9,6 +9,7 @@ body{
     margin: 2%;
     color:#16778C;
     font-weight: lighter;
+    align-items: center;
 }
 .top-right a{
     text-decoration: none;
@@ -17,18 +18,7 @@ body{
 .top-right a:hover{
     color: rgb(235, 140, 106);
 }
-@media screen and (max-width: 768px) { 
-    .top-right{
-        display: none;
-    }
-    .header{
-        margin-top:0;
-    }
-}
-header img{
-    width: 120px;
-    height: 120px;
-}
+
 
 header button{
     padding: 10px 20px;
@@ -79,19 +69,18 @@ nav a:hover {
     width: 100%;
 }
 
-/*Start of Responsive Nav Bar*/
+
 .navbar-toggle{
-    color: #16778c;
+    color: white;
     font-size: x-large;
-    position: absolute;
-    right:20px;
-    top:5%;
+    margin-right:20px;
     cursor: pointer;
     font-size: 20pt;
+    display: none; /*hides the navbar toggle*/
 }
-.active{
-    display: block;
-}
+
+
+/*Start of Responsive Nav Bar*/
 @media screen and (max-width: 767px) { 
 
 .main-nav a{
@@ -104,17 +93,58 @@ nav a:hover {
     color: #16778c;
     color: #A0D9BE;
 }
+
+/*hides the navigation bar*/
 .main-nav{
     align-items: center;
-
-}
-header img{
-    width: 60px;
-    height: 90px;
-    margin:0;
+    display: none;
+    flex-direction: column;
 }
 
+.active-nav{
+    display: flex;
 }
+
+/*displays the  bar toggle visibility*/
+.navbar-toggle{
+    display: block;
+}
+
+/*hides the top-right section*/
+.header{
+    background:#16778c ;
+    margin: 0;
+}
+
+
+#header-logo{
+    width: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-right h4{
+    display: none;
+}
+
+.headbutton1{
+    margin-right: 20px;
+}
+
+}
+
+@media screen and (max-width: 375px) { 
+.header{
+    flex-direction: column;
+}
+}
+
 
 
 
@@ -596,7 +626,6 @@ label {
 .logo img{
     width: 120px;
     fill:#2999A6;
-    display: block;
     margin-top: 20px;
     padding:20px;
 }
@@ -665,7 +694,7 @@ label {
 		background-clip: border-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-        animation: textclip 10s linear infinite;
+        animation: textclip 15s linear infinite;
     }
 
 @keyframes textclip {
