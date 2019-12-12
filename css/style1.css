@@ -84,33 +84,35 @@ nav a:hover {
     font-size: x-large;
     position: absolute;
     right:20px;
-    top:12%;
+    top:5%;
     cursor: pointer;
     font-size: 20pt;
 }
 .active{
     display: block;
 }
-@media screen and (max-width: 768px) { 
-    nav{
-        display: none;
-    }
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 130px;
-        align-items: center;
-        background-color: #ff5e00;
-    }
-    .main-nav{
-        display: flex;
-        flex-direction: row;
-        text-align: right;
-    }
-    .main-nav a{
-        padding-top: 15px;
-    }
+@media screen and (max-width: 767px) { 
+
+.main-nav a{
+    padding: 30px;
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #16778c;
+    color: #A0D9BE;
+}
+.main-nav{
+    align-items: center;
+    display: none;
+}
+header img{
+    width: 60px;
+    height: 90px;
+    margin:0;
+}
+
 }
 
 
