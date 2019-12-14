@@ -80,6 +80,39 @@ nav a:hover {
     display: none; /*hides the navbar toggle*/
 }
 
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav a{
+    margin: 0 70px;
+}
+
+.main-nav-logo{
+    display: none;
+}
+
+.main-nav-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + div{
+    padding-top: 102px;
+}
+
+
+
 
 /*Start of Responsive Nav Bar*/
 @media screen and (max-width: 768px) { 
@@ -97,13 +130,9 @@ nav a:hover {
 }
 
 
-
 .main-nav a{
     padding: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #A0D9BE;
     width: 100%;
 }
@@ -830,7 +859,6 @@ label {
         margin-bottom:10px;
     }
   
-
 
     /*Moves the background image to the heder*/
     .form-header{
