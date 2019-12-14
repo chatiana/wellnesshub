@@ -9,6 +9,7 @@ body{
     color:#16778C;
     font-weight: lighter;
     align-items: center;
+    margin: 0 5%;
 }
 .top-right a{
     text-decoration: none;
@@ -31,6 +32,7 @@ header button{
     border: 2px solid #2999A6;
     color: #2999A6;
 }
+
 .headbutton1:hover{
     background-color: #11698c;
     border-color:  #11698c;
@@ -78,16 +80,59 @@ nav a:hover {
     display: none; /*hides the navbar toggle*/
 }
 
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav a{
+    margin: 0 70px;
+}
+
+.main-nav-logo{
+    display: none;
+}
+
+.main-nav-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + div{
+    padding-top: 102px;
+}
+
+
+
 
 /*Start of Responsive Nav Bar*/
 @media screen and (max-width: 768px) { 
 
+.header{
+    background:#16778c ;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header + div {
+    padding-top:60px;
+}
+
+
 .main-nav a{
     padding: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: #A0D9BE;
     width: 100%;
 }
@@ -108,6 +153,9 @@ nav a:hover {
 
 .active-nav{
     display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 nav{
@@ -119,11 +167,6 @@ nav{
     display: block;
 }
 
-/*hides the top-right section*/
-.header{
-    background:#16778c ;
-    margin: 0;
-}
 
 #header-logo{
     width: 40px;
@@ -152,6 +195,7 @@ nav{
 
 .headbutton1{
     margin-right: 20px;
+    border: whitesmoke;
 }
 
 .headbutton2{
@@ -239,6 +283,7 @@ hr{
     border-radius: 16px;
 }
 .hero-banner-sec2{
+    display: flex;
     padding:10%;
     width: 40%;
 }
@@ -814,7 +859,6 @@ label {
         margin-bottom:10px;
     }
   
-
 
     /*Moves the background image to the heder*/
     .form-header{
